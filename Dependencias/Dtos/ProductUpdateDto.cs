@@ -2,19 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dependencias.Models;
+namespace Dependencias.Dtos;
 
-public partial class Product
+public class ProductUpdateDto
 {
-    [Key]
-    public int ProductId { get; set; }
-    [Required]
-
-    public string ProductName { get; set; } = null!;
-
     public string ProductDescription { get; set; } = null!;
-
     public decimal ProductPrice { get; set; }
-
     public int ProductStock { get; set; }
 }

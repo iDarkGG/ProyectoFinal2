@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Dependencias.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dependencias.Models;
+namespace Dependencias.Data;
 
 public class MainContext : DbContext
 {
@@ -11,6 +12,11 @@ public class MainContext : DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=DESKTOP-26H39J7\\SQLSERVER2019;Database=Product;Trusted_Connection=True;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=WILMAN-PC;Database=Tienda;Trusted_Connection=True;TrustServerCertificate=True");
+    }
+
+    public MainContext(DbContextOptions<MainContext> dbContext): base(dbContext)
+    {
+
     }
 }
