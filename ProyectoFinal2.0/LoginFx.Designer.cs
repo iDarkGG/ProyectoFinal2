@@ -127,8 +127,6 @@
             txtContraseña.Size = new Size(222, 19);
             txtContraseña.TabIndex = 18;
             txtContraseña.Text = "CONTRASEÑA";
-            txtContraseña.Enter += txtContraseña_Enter;
-            txtContraseña.Leave += txtContraseña_Leave;
             // 
             // pictureBox5
             // 
@@ -181,7 +179,6 @@
             txtUsuario.Size = new Size(222, 19);
             txtUsuario.TabIndex = 17;
             txtUsuario.Text = "USUARIO";
-            txtUsuario.Enter += txtUsuario_Enter;
             txtUsuario.Leave += txtUsuario_Leave;
             // 
             // label3
