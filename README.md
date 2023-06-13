@@ -2,4 +2,4 @@
 Tienda Perrona 2.0
 
 <h3> Valiendo Riata</h3>
-*wake up mommy, I just pissed the Bed.
+wake up mommy, I just pissed the Bed.
