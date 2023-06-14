@@ -215,7 +215,8 @@ namespace ProyectoFinal2._0
         {
 
             APPFx abrirFormPrincipal = new APPFx();
-            abrirFormPrincipal.ShowDialog();
+            abrirFormPrincipal.Show();
+            this.ShowInTaskbar = false;
 
         }
 
@@ -224,8 +225,8 @@ namespace ProyectoFinal2._0
         private void btnRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             RegistroFx AbrirRegistro = new RegistroFx();
-            AbrirRegistro.Show();
-            this.Hide();
+            AbrirRegistro.ShowDialog();
+
 
         }
     }
