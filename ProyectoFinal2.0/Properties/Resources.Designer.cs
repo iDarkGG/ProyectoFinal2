@@ -293,6 +293,16 @@ namespace ProyectoFinal2._0.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rectangulo_redondeado {
+            get {
+                object obj = ResourceManager.GetObject("rectangulo-redondeado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rtx4090 {
             get {
                 object obj = ResourceManager.GetObject("rtx4090", resourceCulture);

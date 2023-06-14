@@ -21,5 +21,15 @@ namespace ProyectoFinal2._0.FormsProducts
         {
             this.Hide();
         }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            APPFx aPPFx = new APPFx();  
+            FacturacionFx facturacionFx = new FacturacionFx();
+            facturacionFx.ShowDialog();
+            aPPFx.ShowInTaskbar = false;
+          
+
+        }
     }
 }

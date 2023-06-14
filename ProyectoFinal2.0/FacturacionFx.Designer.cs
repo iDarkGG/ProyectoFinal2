@@ -35,7 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.checkTarjetaDeCredito = new System.Windows.Forms.CheckBox();
             this.panelContenedorFormasDePago = new System.Windows.Forms.Panel();
-            this.fxPagoEfectivo2 = new ProyectoFinal2._0.FormsProducts.FxPagoEfectivo();
+            this.fxFormaDePagoTarjeta1 = new ProyectoFinal2._0.FormsProducts.FxFormaDePagoTarjeta();
+            this.fxFormaDePagoEfectivo1 = new ProyectoFinal2._0.FormsProducts.FxFormaDePagoEfectivo();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelContenedorFormasDePago.SuspendLayout();
@@ -43,8 +46,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(41)))), ((int)(((byte)(210)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(539, 0);
             this.panel1.Name = "panel1";
@@ -101,25 +105,49 @@
             this.checkTarjetaDeCredito.TabIndex = 0;
             this.checkTarjetaDeCredito.Text = "Tarjeta de Credito";
             this.checkTarjetaDeCredito.UseVisualStyleBackColor = true;
+            this.checkTarjetaDeCredito.CheckedChanged += new System.EventHandler(this.checkTarjetaDeCredito_CheckedChanged);
             // 
             // panelContenedorFormasDePago
             // 
             this.panelContenedorFormasDePago.BackColor = System.Drawing.Color.White;
-            this.panelContenedorFormasDePago.Controls.Add(this.fxPagoEfectivo2);
+            this.panelContenedorFormasDePago.Controls.Add(this.fxFormaDePagoTarjeta1);
+            this.panelContenedorFormasDePago.Controls.Add(this.fxFormaDePagoEfectivo1);
             this.panelContenedorFormasDePago.Location = new System.Drawing.Point(15, 181);
             this.panelContenedorFormasDePago.Name = "panelContenedorFormasDePago";
             this.panelContenedorFormasDePago.Size = new System.Drawing.Size(508, 296);
             this.panelContenedorFormasDePago.TabIndex = 4;
             // 
-            // fxPagoEfectivo2
+            // fxFormaDePagoTarjeta1
             // 
-            this.fxPagoEfectivo2.BackColor = System.Drawing.Color.White;
-            this.fxPagoEfectivo2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fxPagoEfectivo2.Location = new System.Drawing.Point(0, 0);
-            this.fxPagoEfectivo2.Name = "fxPagoEfectivo2";
-            this.fxPagoEfectivo2.Size = new System.Drawing.Size(508, 296);
-            this.fxPagoEfectivo2.TabIndex = 0;
-            this.fxPagoEfectivo2.Load += new System.EventHandler(this.fxPagoEfectivo2_Load);
+            this.fxFormaDePagoTarjeta1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fxFormaDePagoTarjeta1.Location = new System.Drawing.Point(0, 0);
+            this.fxFormaDePagoTarjeta1.Name = "fxFormaDePagoTarjeta1";
+            this.fxFormaDePagoTarjeta1.Size = new System.Drawing.Size(508, 296);
+            this.fxFormaDePagoTarjeta1.TabIndex = 1;
+            // 
+            // fxFormaDePagoEfectivo1
+            // 
+            this.fxFormaDePagoEfectivo1.BackColor = System.Drawing.Color.White;
+            this.fxFormaDePagoEfectivo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fxFormaDePagoEfectivo1.Location = new System.Drawing.Point(0, 0);
+            this.fxFormaDePagoEfectivo1.Name = "fxFormaDePagoEfectivo1";
+            this.fxFormaDePagoEfectivo1.Size = new System.Drawing.Size(508, 296);
+            this.fxFormaDePagoEfectivo1.TabIndex = 0;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Location = new System.Drawing.Point(269, -3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(34, 30);
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FacturacionFx
             // 
@@ -133,6 +161,9 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FacturacionFx";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FacturacionFx_Load);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -153,5 +184,8 @@
         private Panel panelContenedorFormasDePago;
         private FormsProducts.FxPagoEfectivo fxPagoEfectivo1;
         private FormsProducts.FxPagoEfectivo fxPagoEfectivo2;
+        private FormsProducts.FxFormaDePagoTarjeta fxFormaDePagoTarjeta1;
+        private FormsProducts.FxFormaDePagoEfectivo fxFormaDePagoEfectivo1;
+        private Button btnCerrar;
     }
 }
