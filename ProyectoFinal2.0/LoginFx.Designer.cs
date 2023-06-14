@@ -28,236 +28,225 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelContenedorLogin = new Panel();
-            panel1 = new Panel();
-            btnRegistrar = new LinkLabel();
-            btnLogin = new Button();
-            txtContraseña = new TextBox();
-            pictureBox5 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            txtUsuario = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            btnCerrarLogin = new Button();
-            pictureBox1 = new PictureBox();
-            panelContenedorLogin.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.panelContenedorLogin = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegistrar = new System.Windows.Forms.LinkLabel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCerrarLogin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelContenedorLogin.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panelContenedorLogin
             // 
-            panelContenedorLogin.BackColor = Color.White;
-            panelContenedorLogin.Controls.Add(panel1);
-            panelContenedorLogin.Controls.Add(pictureBox1);
-            panelContenedorLogin.Dock = DockStyle.Fill;
-            panelContenedorLogin.Location = new Point(0, 0);
-            panelContenedorLogin.Name = "panelContenedorLogin";
-            panelContenedorLogin.Size = new Size(722, 419);
-            panelContenedorLogin.TabIndex = 0;
-            panelContenedorLogin.Paint += panelContenedorLogin_Paint;
-            panelContenedorLogin.MouseDown += panelContenedorLogin_MouseDown;
+            this.panelContenedorLogin.BackColor = System.Drawing.Color.White;
+            this.panelContenedorLogin.Controls.Add(this.panel1);
+            this.panelContenedorLogin.Controls.Add(this.pictureBox1);
+            this.panelContenedorLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedorLogin.Location = new System.Drawing.Point(0, 0);
+            this.panelContenedorLogin.Name = "panelContenedorLogin";
+            this.panelContenedorLogin.Size = new System.Drawing.Size(722, 419);
+            this.panelContenedorLogin.TabIndex = 0;
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnRegistrar);
-            panel1.Controls.Add(btnLogin);
-            panel1.Controls.Add(txtContraseña);
-            panel1.Controls.Add(pictureBox5);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(txtUsuario);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(btnCerrarLogin);
-            panel1.Cursor = Cursors.Hand;
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(428, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(294, 419);
-            panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
-            panel1.MouseDown += panel1_MouseDown;
+            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.txtContraseña);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.txtUsuario);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnCerrarLogin);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(428, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(294, 419);
+            this.panel1.TabIndex = 1;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.AutoSize = true;
-            btnRegistrar.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnRegistrar.LinkColor = Color.FromArgb(123, 41, 210);
-            btnRegistrar.Location = new Point(94, 376);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(103, 19);
-            btnRegistrar.TabIndex = 22;
-            btnRegistrar.TabStop = true;
-            btnRegistrar.Text = "Create Account";
-            btnRegistrar.LinkClicked += btnRegistrar_LinkClicked;
+            this.btnRegistrar.AutoSize = true;
+            this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegistrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(41)))), ((int)(((byte)(210)))));
+            this.btnRegistrar.Location = new System.Drawing.Point(94, 376);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(103, 19);
+            this.btnRegistrar.TabIndex = 22;
+            this.btnRegistrar.TabStop = true;
+            this.btnRegistrar.Text = "Create Account";
+            this.btnRegistrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnRegistrar_LinkClicked);
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.FromArgb(123, 41, 210);
-            btnLogin.FlatAppearance.BorderSize = 0;
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Segoe UI Emoji", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(92, 335);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(105, 38);
-            btnLogin.TabIndex = 21;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(41)))), ((int)(((byte)(210)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(92, 335);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(105, 38);
+            this.btnLogin.TabIndex = 21;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtContraseña
             // 
-            txtContraseña.BackColor = Color.White;
-            txtContraseña.BorderStyle = BorderStyle.None;
-            txtContraseña.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtContraseña.ForeColor = SystemColors.GrayText;
-            txtContraseña.Location = new Point(46, 236);
-            txtContraseña.Name = "txtContraseña";
-            txtContraseña.Size = new Size(222, 19);
-            txtContraseña.TabIndex = 18;
-            txtContraseña.Text = "CONTRASEÑA";
+            this.txtContraseña.BackColor = System.Drawing.Color.White;
+            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtContraseña.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtContraseña.Location = new System.Drawing.Point(46, 236);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(222, 19);
+            this.txtContraseña.TabIndex = 18;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.padlock;
-            pictureBox5.Location = new Point(16, 232);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(24, 23);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 16;
-            pictureBox5.TabStop = false;
+            this.pictureBox5.Image = global::ProyectoFinal2._0.Properties.Resources.padlock;
+            this.pictureBox5.Location = new System.Drawing.Point(16, 232);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.menos_linea_recta_horizontal__1_1;
-            pictureBox2.Location = new Point(16, 251);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(256, 19);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 20;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = global::ProyectoFinal2._0.Properties.Resources.menos_linea_recta_horizontal__1_1;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 251);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 19);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.user__1_;
-            pictureBox4.Location = new Point(16, 175);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(24, 23);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 14;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.Image = global::ProyectoFinal2._0.Properties.Resources.user__1_;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 175);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.menos_linea_recta_horizontal__1_1;
-            pictureBox3.Location = new Point(16, 193);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(256, 19);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 19;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Image = global::ProyectoFinal2._0.Properties.Resources.menos_linea_recta_horizontal__1_1;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 193);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(256, 19);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
             // 
             // txtUsuario
             // 
-            txtUsuario.BackColor = Color.White;
-            txtUsuario.BorderStyle = BorderStyle.None;
-            txtUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsuario.ForeColor = SystemColors.GrayText;
-            txtUsuario.Location = new Point(46, 175);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(222, 19);
-            txtUsuario.TabIndex = 17;
-            txtUsuario.Text = "USUARIO";
-            txtUsuario.Leave += txtUsuario_Leave;
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtUsuario.Location = new System.Drawing.Point(46, 175);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(222, 19);
+            this.txtUsuario.TabIndex = 17;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(73, 116);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 21);
-            label3.TabIndex = 3;
-            label3.Text = "Login your account";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(73, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 21);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Login your account";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Emoji", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(16, 45);
-            label2.Name = "label2";
-            label2.Size = new Size(159, 28);
-            label2.TabIndex = 2;
-            label2.Text = "Good Morning";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(16, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Good Morning";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Emoji", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(16, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(61, 26);
-            label1.TabIndex = 1;
-            label1.Text = "Hola!";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(16, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hola!";
             // 
             // btnCerrarLogin
             // 
-            btnCerrarLogin.FlatAppearance.BorderSize = 0;
-            btnCerrarLogin.FlatStyle = FlatStyle.Flat;
-            btnCerrarLogin.Font = new Font("Verdana", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCerrarLogin.Location = new Point(255, 0);
-            btnCerrarLogin.Name = "btnCerrarLogin";
-            btnCerrarLogin.Size = new Size(39, 35);
-            btnCerrarLogin.TabIndex = 0;
-            btnCerrarLogin.Text = "X";
-            btnCerrarLogin.UseVisualStyleBackColor = true;
-            btnCerrarLogin.Click += btnCerrarLogin_Click;
+            this.btnCerrarLogin.FlatAppearance.BorderSize = 0;
+            this.btnCerrarLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarLogin.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCerrarLogin.Location = new System.Drawing.Point(255, 0);
+            this.btnCerrarLogin.Name = "btnCerrarLogin";
+            this.btnCerrarLogin.Size = new System.Drawing.Size(39, 35);
+            this.btnCerrarLogin.TabIndex = 0;
+            this.btnCerrarLogin.Text = "X";
+            this.btnCerrarLogin.UseVisualStyleBackColor = true;
+            this.btnCerrarLogin.Click += new System.EventHandler(this.btnCerrarLogin_Click);
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = Properties.Resources.paisaje_montana_purpura;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(495, 419);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::ProyectoFinal2._0.Properties.Resources.paisaje_montana_purpura;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(495, 419);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // LoginFx
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(722, 419);
-            Controls.Add(panelContenedorLogin);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "LoginFx";
-            StartPosition = FormStartPosition.CenterScreen;
-            Activated += LoginFx_Activated;
-            ResizeEnd += LoginFx_ResizeEnd;
-            SizeChanged += LoginFx_SizeChanged;
-            Paint += LoginFx_Paint;
-            MouseDown += LoginFx_MouseDown;
-            panelContenedorLogin.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(722, 419);
+            this.Controls.Add(this.panelContenedorLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "LoginFx";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.panelContenedorLogin.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -25,6 +25,12 @@ namespace ProyectoFinal2._0
             InitializeComponent();
             this.Padding = new Padding(bordeSize);
             this.BackColor = borderColor;
+            txtUsuarioRegistro.PlaceholderText = "Nombre de Usuario";
+            txtCorreoRegistro.PlaceholderText = "ejemplo@ejemplo.com";
+            txtContraseñaRegistro.PlaceholderText = "Contraseña";
+            txtConfirmarContraseña.PlaceholderText = "Confirme su Contraseña";
+            txtContraseñaRegistro.UseSystemPasswordChar = true;
+            txtConfirmarContraseña.UseSystemPasswordChar = true;
 
         }
         //Drag Form     
@@ -211,80 +217,9 @@ namespace ProyectoFinal2._0
             this.Close();
         }
 
-        private void txtUsuarioRegistro_Enter(object sender, EventArgs e)
+        private void btnCerrarLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsuarioRegistro.Text == "NOMBRE DE USUARIO")
-            {
-                txtUsuarioRegistro.Text = "";
-                txtUsuarioRegistro.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtUsuarioRegistro_Leave(object sender, EventArgs e)
-        {
-            if (txtUsuarioRegistro.Text == "")
-            {
-                txtUsuarioRegistro.Text = "NOMBRE DE USUARIO";
-                txtUsuarioRegistro.ForeColor = Color.DimGray;
-            }
-        }
-
-        private void txtCorreoRegistro_Enter(object sender, EventArgs e)
-        {
-            if (txtCorreoRegistro.Text == "CORREO")
-            {
-                txtCorreoRegistro.Text = "";
-                txtCorreoRegistro.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtCorreoRegistro_Leave(object sender, EventArgs e)
-        {
-            if (txtCorreoRegistro.Text == "")
-            {
-                txtCorreoRegistro.Text = "CORREO";
-                txtCorreoRegistro.ForeColor = Color.DimGray;
-            }
-        }
-
-        private void txtContraseñaRegistro_Enter(object sender, EventArgs e)
-        {
-            if (txtContraseñaRegistro.Text == "CONTRASEÑA")
-            {
-                txtContraseñaRegistro.Text = "";
-                txtContraseñaRegistro.ForeColor = Color.LightGray;
-                txtContraseñaRegistro.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void txtContraseñaRegistro_Leave(object sender, EventArgs e)
-        {
-            if (txtContraseñaRegistro.Text == "")
-            {
-                txtContraseñaRegistro.Text = "CONTRASEÑA";
-                txtContraseñaRegistro.ForeColor = Color.DimGray;
-                txtContraseñaRegistro.UseSystemPasswordChar = false;
-            }
-        }
-
-        private void txtConfirmarContraseña_Enter(object sender, EventArgs e)
-        {
-            if (txtConfirmarContraseña.Text == "CONFIRMAR CONTRASEÑA")
-            {
-                txtConfirmarContraseña.Text = "";
-               txtConfirmarContraseña.ForeColor = Color.LightGray;
-                txtConfirmarContraseña.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void txtConfirmarContraseña_Leave(object sender, EventArgs e)
-        {
-            if (txtConfirmarContraseña.Text == "")
-            {
-                txtConfirmarContraseña.Text = "CONFIRMAR CONTRASEÑA";
-                txtConfirmarContraseña.ForeColor = Color.DimGray;
-                txtConfirmarContraseña.UseSystemPasswordChar = false;
-            }
+            Application.Exit();
         }
     }
 }
