@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Dependencias.Data;
 using Dependencias.Model;
-using Dependencias.Dtos;
+using API.Dtos;
 using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
@@ -20,7 +20,7 @@ namespace API.Controllers
 
             [HttpGet]
             [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+            public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
             {
                 logger.LogInformation("Get all Users");
                 var lst = await context.Users.ToListAsync();
@@ -31,7 +31,7 @@ namespace API.Controllers
             [ProducesResponseType(StatusCodes.Status404NotFound)]
             [ProducesResponseType(StatusCodes.Status400BadRequest)]
             [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<User>> GetUsersById(int Id)
+            public async Task<ActionResult<UserDto>> GetUsersById(int Id)
             {
                 logger.LogInformation("Gets the User with the specified id");
 
@@ -55,7 +55,7 @@ namespace API.Controllers
             [HttpGet("{Name}", Name = "getUsersByName")]
             [ProducesResponseType(StatusCodes.Status404NotFound)]
             [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<User>> GetUsersByName(string Name)
+            public async Task<ActionResult<UserDto>> GetUsersByName(string Name)
             {
                 logger.LogInformation("Gets the User from the specified name");
 
@@ -92,7 +92,7 @@ namespace API.Controllers
             if (user is null) return BadRequest();
 
 
-            await context.Users.AddAsync(new User() {UserName = user.UserName, Email = user.Email,Password = user.Password });
+            await context.Users.AddAsync(new UserDto() {UserName = user.UserName, Email = user.Email,Password = user.Password });
 
             await context.SaveChangesAsync();
 

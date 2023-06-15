@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dependencias.Dtos;
+namespace API.Dtos;
 
 public class UserPostDto
 {

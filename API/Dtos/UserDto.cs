@@ -5,12 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dependencias.Dtos
+namespace API.Dtos
 {
-    public class UserUpdateDto
+    public class UserDto
     {
+        public int UserID { get; set; }
         public string UserName { get; set; }
+        [Required]
+
         public string Email { get; set; }
+        [Required]
+
         public string Password { get; set; }
     }
 }

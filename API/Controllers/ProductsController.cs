@@ -1,5 +1,5 @@
 ﻿using Dependencias.Data;
-using Dependencias.Dtos;
+using API.Dtos;
 using Dependencias.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +22,7 @@ namespace API.Controllers
       
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<IEnumerable<Product>>> getProducts()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> getProducts()
         {
             logger.LogInformation("Get all Products");
             var lst = await context.Products.ToListAsync();
@@ -33,7 +33,7 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<Product>> getProductById(int Id)
+        public async Task<ActionResult<ProductDto>> getProductById(int Id)
         {
             logger.LogInformation("Gets the Product from the specified id");
 
@@ -57,7 +57,7 @@ namespace API.Controllers
         [HttpGet("{Name}", Name = "getProductByName")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<Product>> getProductByName(string Name)
+        public async Task<ActionResult<ProductDto>> getProductByName(string Name)
         {
             logger.LogInformation("Gets the Product from the specified name");
 
