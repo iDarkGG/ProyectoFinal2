@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal2._0.FormsProducts
 {
-    public partial class FxCase : UserControl
+    public partial class FxFormaDePagoTarjeta : UserControl
     {
-        public FxCase()
+        public FxFormaDePagoTarjeta()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
         }
     }
 }
