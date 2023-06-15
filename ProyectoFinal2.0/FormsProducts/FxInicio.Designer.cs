@@ -119,6 +119,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label5);

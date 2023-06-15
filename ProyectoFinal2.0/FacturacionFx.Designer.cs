@@ -28,149 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkTarjetaDeCredito = new System.Windows.Forms.CheckBox();
-            this.panelContenedorFormasDePago = new System.Windows.Forms.Panel();
-            this.fxFormaDePagoTarjeta1 = new ProyectoFinal2._0.FormsProducts.FxFormaDePagoTarjeta();
-            this.fxFormaDePagoEfectivo1 = new ProyectoFinal2._0.FormsProducts.FxFormaDePagoEfectivo();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panelContenedorFormasDePago.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            btnCerrar = new Button();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            label2 = new Label();
+            checkTarjetaDeCredito = new CheckBox();
+            panelContenedorFormasDePago = new Panel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(41)))), ((int)(((byte)(210)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(539, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 514);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Sistema de Facturacion";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoFinal2._0.Properties.Resources.minus;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 19);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.checkTarjetaDeCredito);
-            this.panel2.Location = new System.Drawing.Point(12, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(511, 82);
-            this.panel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(26, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 38);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Metodo seguro para pagar usando \r\ntu cuenta bancaria";
-            // 
-            // checkTarjetaDeCredito
-            // 
-            this.checkTarjetaDeCredito.AutoSize = true;
-            this.checkTarjetaDeCredito.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkTarjetaDeCredito.Location = new System.Drawing.Point(26, 3);
-            this.checkTarjetaDeCredito.Name = "checkTarjetaDeCredito";
-            this.checkTarjetaDeCredito.Size = new System.Drawing.Size(181, 28);
-            this.checkTarjetaDeCredito.TabIndex = 0;
-            this.checkTarjetaDeCredito.Text = "Tarjeta de Credito";
-            this.checkTarjetaDeCredito.UseVisualStyleBackColor = true;
-            this.checkTarjetaDeCredito.CheckedChanged += new System.EventHandler(this.checkTarjetaDeCredito_CheckedChanged);
-            // 
-            // panelContenedorFormasDePago
-            // 
-            this.panelContenedorFormasDePago.BackColor = System.Drawing.Color.White;
-            this.panelContenedorFormasDePago.Controls.Add(this.fxFormaDePagoTarjeta1);
-            this.panelContenedorFormasDePago.Controls.Add(this.fxFormaDePagoEfectivo1);
-            this.panelContenedorFormasDePago.Location = new System.Drawing.Point(15, 181);
-            this.panelContenedorFormasDePago.Name = "panelContenedorFormasDePago";
-            this.panelContenedorFormasDePago.Size = new System.Drawing.Size(508, 296);
-            this.panelContenedorFormasDePago.TabIndex = 4;
-            // 
-            // fxFormaDePagoTarjeta1
-            // 
-            this.fxFormaDePagoTarjeta1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fxFormaDePagoTarjeta1.Location = new System.Drawing.Point(0, 0);
-            this.fxFormaDePagoTarjeta1.Name = "fxFormaDePagoTarjeta1";
-            this.fxFormaDePagoTarjeta1.Size = new System.Drawing.Size(508, 296);
-            this.fxFormaDePagoTarjeta1.TabIndex = 1;
-            // 
-            // fxFormaDePagoEfectivo1
-            // 
-            this.fxFormaDePagoEfectivo1.BackColor = System.Drawing.Color.White;
-            this.fxFormaDePagoEfectivo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fxFormaDePagoEfectivo1.Location = new System.Drawing.Point(0, 0);
-            this.fxFormaDePagoEfectivo1.Name = "fxFormaDePagoEfectivo1";
-            this.fxFormaDePagoEfectivo1.Size = new System.Drawing.Size(508, 296);
-            this.fxFormaDePagoEfectivo1.TabIndex = 0;
+            panel1.BackColor = Color.FromArgb(123, 41, 210);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(btnCerrar);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(511, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(247, 443);
+            panel1.TabIndex = 0;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(269, -3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(34, 30);
-            this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            btnCerrar.Cursor = Cursors.Hand;
+            btnCerrar.FlatAppearance.BorderSize = 0;
+            btnCerrar.FlatStyle = FlatStyle.Flat;
+            btnCerrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCerrar.ForeColor = Color.White;
+            btnCerrar.Location = new Point(269, -3);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(34, 30);
+            btnCerrar.TabIndex = 3;
+            btnCerrar.Text = "X";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Sitka Small", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 19);
+            label1.TabIndex = 1;
+            label1.Text = "Sistema de Facturacion";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.minus;
+            pictureBox1.Location = new Point(12, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(172, 19);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(checkTarjetaDeCredito);
+            panel2.Location = new Point(12, 46);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(478, 76);
+            panel2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Sitka Small", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(26, 34);
+            label2.Name = "label2";
+            label2.Size = new Size(237, 38);
+            label2.TabIndex = 4;
+            label2.Text = "Metodo seguro para pagar usando \r\ntu cuenta bancaria";
+            // 
+            // checkTarjetaDeCredito
+            // 
+            checkTarjetaDeCredito.AutoSize = true;
+            checkTarjetaDeCredito.Font = new Font("Sitka Small", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            checkTarjetaDeCredito.Location = new Point(26, 3);
+            checkTarjetaDeCredito.Name = "checkTarjetaDeCredito";
+            checkTarjetaDeCredito.Size = new Size(181, 28);
+            checkTarjetaDeCredito.TabIndex = 0;
+            checkTarjetaDeCredito.Text = "Tarjeta de Credito";
+            checkTarjetaDeCredito.UseVisualStyleBackColor = true;
+            checkTarjetaDeCredito.CheckedChanged += checkTarjetaDeCredito_CheckedChanged;
+            // 
+            // panelContenedorFormasDePago
+            // 
+            panelContenedorFormasDePago.BackColor = Color.White;
+            panelContenedorFormasDePago.Location = new Point(12, 128);
+            panelContenedorFormasDePago.Name = "panelContenedorFormasDePago";
+            panelContenedorFormasDePago.Size = new Size(478, 296);
+            panelContenedorFormasDePago.TabIndex = 4;
             // 
             // FacturacionFx
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 514);
-            this.Controls.Add(this.panelContenedorFormasDePago);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FacturacionFx";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FacturacionFx_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panelContenedorFormasDePago.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(758, 443);
+            Controls.Add(panelContenedorFormasDePago);
+            Controls.Add(panel2);
+            Controls.Add(label1);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FacturacionFx";
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FacturacionFx_Load;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -39,7 +39,7 @@ namespace ProyectoFinal2._0
 
         private void FacturacionFx_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
