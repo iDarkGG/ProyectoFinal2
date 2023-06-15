@@ -313,6 +313,16 @@ namespace ProyectoFinal2._0.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mastercard_payment_method_icon_142750 {
+            get {
+                object obj = ResourceManager.GetObject("mastercard_payment_method_icon_142750", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MEMORIA_16G_DDR5_5200MHZ {
             get {
                 object obj = ResourceManager.GetObject("MEMORIA 16G DDR5 5200MHZ", resourceCulture);

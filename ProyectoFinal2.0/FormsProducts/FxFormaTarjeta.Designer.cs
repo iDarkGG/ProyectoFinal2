@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal2._0.FormsProducts
 {
-    partial class FxFormaDePagoTarjeta
+    partial class FxFormaTarjeta
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lvInfoProductos = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPagar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,49 +39,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCerrarCarrito = new System.Windows.Forms.Button();
+            this.dataGridViewCarrito = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarrito)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lvInfoProductos
-            // 
-            this.lvInfoProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvInfoProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.lvInfoProductos.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lvInfoProductos.GridLines = true;
-            this.lvInfoProductos.Location = new System.Drawing.Point(3, 120);
-            this.lvInfoProductos.Name = "lvInfoProductos";
-            this.lvInfoProductos.Size = new System.Drawing.Size(542, 276);
-            this.lvInfoProductos.TabIndex = 0;
-            this.lvInfoProductos.UseCompatibleStateImageBehavior = false;
-            this.lvInfoProductos.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nombre del Producto";
-            this.columnHeader1.Width = 260;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "ID";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Unidades";
-            this.columnHeader3.Width = 70;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Precio Unit";
-            this.columnHeader4.Width = 90;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Total";
             // 
             // panel1
             // 
@@ -211,32 +166,37 @@
             this.btnCerrarCarrito.Text = "X";
             this.btnCerrarCarrito.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewCarrito
+            // 
+            this.dataGridViewCarrito.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewCarrito.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCarrito.Location = new System.Drawing.Point(3, 121);
+            this.dataGridViewCarrito.Name = "dataGridViewCarrito";
+            this.dataGridViewCarrito.RowTemplate.Height = 25;
+            this.dataGridViewCarrito.Size = new System.Drawing.Size(533, 305);
+            this.dataGridViewCarrito.TabIndex = 4;
+            // 
             // CarritoFx
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridViewCarrito);
             this.Controls.Add(this.btnCerrarCarrito);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lvInfoProductos);
             this.Name = "CarritoFx";
             this.Size = new System.Drawing.Size(746, 429);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarrito)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ListView lvInfoProductos;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
         private Panel panel1;
         private Label label1;
         private Label label2;
@@ -248,5 +208,6 @@
         private Label label3;
         private Button btnPagar;
         private Button btnCerrarCarrito;
+        private DataGridView dataGridViewCarrito;
     }
 }
