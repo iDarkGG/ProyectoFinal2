@@ -40,14 +40,12 @@
             comboBox1 = new ComboBox();
             label5 = new Label();
             button2 = new Button();
-            label6 = new Label();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
             label2 = new Label();
             cboProcesador1 = new ComboBox();
             label3 = new Label();
             button1 = new Button();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
             label10 = new Label();
@@ -70,6 +68,8 @@
             button6 = new Button();
             label18 = new Label();
             pictureBox6 = new PictureBox();
+            label6 = new Label();
+            label1 = new Label();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
@@ -223,15 +223,6 @@
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 60);
-            label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.MEMORIA_DDR4_16GB_2666MHZ_CRUCIAL;
@@ -301,15 +292,6 @@
             button1.TabIndex = 5;
             button1.Text = "Agregar";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 206);
-            label1.Name = "label1";
-            label1.Size = new Size(154, 60);
-            label1.TabIndex = 4;
-            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
             // 
             // pictureBox1
             // 
@@ -558,6 +540,24 @@
             pictureBox6.TabIndex = 3;
             pictureBox6.TabStop = false;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(13, 206);
+            label6.Name = "label6";
+            label6.Size = new Size(154, 60);
+            label6.TabIndex = 4;
+            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 206);
+            label1.Name = "label1";
+            label1.Size = new Size(154, 60);
+            label1.TabIndex = 4;
+            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            // 
             // FxMemoriasRam
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -571,7 +571,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FxMemoriasRam";
-            Size = new Size(729, 429);
+            Size = new Size(712, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -607,14 +607,12 @@
         private ComboBox comboBox1;
         private Label label5;
         private Button button2;
-        private Label label6;
         private PictureBox pictureBox2;
         private Panel panel1;
         private Label label2;
         private ComboBox cboProcesador1;
         private Label label3;
         private Button button1;
-        private Label label1;
         private PictureBox pictureBox1;
         private Panel panel4;
         private Label label10;
@@ -637,5 +635,7 @@
         private Button button6;
         private Label label18;
         private PictureBox pictureBox6;
+        private Label label6;
+        private Label label1;
     }
 }
