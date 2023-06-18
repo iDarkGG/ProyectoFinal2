@@ -1,4 +1,5 @@
 using Dependencias.Data;
+using API.Mapper;
 using Dependencias.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,10 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(ApiMapper));
 builder.Services.AddDbContext<MainContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));

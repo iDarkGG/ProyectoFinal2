@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dependencias.Model;
 
@@ -14,6 +15,7 @@ public class Product
 
     public string ProductDescription { get; set; } = null!;
 
+    [Column(TypeName = "decimal(6,2)")]
     public decimal ProductPrice { get; set; }
 
     public int ProductStock { get; set; }

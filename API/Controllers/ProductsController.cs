@@ -100,5 +100,13 @@ namespace API.Controllers
             return Ok();
         }
 
+        [HttpPatch]
+        public async Task<ActionResult> UpdatePatch([FromBody] JsonContent json)
+        {
+
+
+            return Ok();
+        }
+
     }
 }

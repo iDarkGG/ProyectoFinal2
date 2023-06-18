@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Dependencias.Data;
 using Dependencias.Model;
 using API.Dtos;
 using Microsoft.EntityFrameworkCore;
+using Dependencias.Data;
+using API.Mapper;
+using AutoMapper;
+
 namespace API.Controllers
 {
     [Route("ApiTienda/[Controller]")]
@@ -11,11 +14,13 @@ namespace API.Controllers
     {
             private readonly MainContext context;
             private readonly ILogger<UsersController> logger;
-
-            public UsersController(MainContext context, ILogger<UsersController> logger)
+            private readonly IMapper mapper;
+ 
+            public UsersController(MainContext context, ILogger<UsersController> logger,IMapper apiMapper)
             {
                 this.context = context;
                 this.logger = logger;
+                mapper = apiMapper;
             }
 
             [HttpGet]
@@ -24,7 +29,7 @@ namespace API.Controllers
             {
                 logger.LogInformation("Get all Users");
                 var lst = await context.Users.ToListAsync();
-                return Ok(lst);
+                return Ok(mapper.Map<List<UserDto>>(lst));
             }
 
             [HttpGet("{Id:int}", Name = "getUsersById")]
@@ -49,7 +54,7 @@ namespace API.Controllers
                     return NotFound();
                 }
 
-                return Ok(Users);
+                return Ok(mapper.Map<UserDto>(Users));
             }
 
             [HttpGet("{Name}", Name = "getUsersByName")]
@@ -67,7 +72,7 @@ namespace API.Controllers
                     return NotFound();
                 }
 
-                return Ok(Users);
+                return Ok(mapper.Map<UserDto>(Users));
             }
 
         [HttpPost]
@@ -92,7 +97,7 @@ namespace API.Controllers
             if (user is null) return BadRequest();
 
 
-            await context.Users.AddAsync(new UserDto() {UserName = user.UserName, Email = user.Email,Password = user.Password });
+            await context.Users.AddAsync(mapper.Map<User>(user));
 
             await context.SaveChangesAsync();
 
@@ -102,11 +107,11 @@ namespace API.Controllers
         [HttpPut("{Id:int}",Name = "UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult> UpdateUser([FromBody] UserUpdateDto user, int Id)
+        public async Task<ActionResult> UpdateUser([FromBody] UserUpdateDto userP, int Id)
         {
             if (Id == 0) return BadRequest();
             
-            if (user is null) return BadRequest();
+            if (userP is null) return BadRequest();
 
             var usertofind = await context.Users.FindAsync(Id);
 
@@ -116,9 +121,7 @@ namespace API.Controllers
                 return NotFound();
             }
 
-            usertofind.Email = user.Email;
-            usertofind.UserName = user.UserName;
-            usertofind.Password = user.Password;
+            usertofind = mapper.Map<User>(userP);
 
             context.Entry(usertofind).State = EntityState.Modified;
 
