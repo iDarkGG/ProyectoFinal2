@@ -1,6 +1,8 @@
-﻿using Dependencias.Data;
-using Dependencias.Dtos;
+﻿using API.Dtos;
+using API.Repositorio;
+using AutoMapper;
 using Dependencias.Model;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,30 +12,33 @@ namespace API.Controllers
     [ApiController]
     public class ProductsController : Controller
     {
-        private readonly MainContext context;
+        private readonly IProductRepository context;
         private readonly ILogger<ProductsController> logger;
+        private readonly IMapper mapper;
 
-        public ProductsController(MainContext context, ILogger<ProductsController> logger)
+
+        public ProductsController(IProductRepository context, ILogger<ProductsController> logger, IMapper mapper)
         {
             this.context = context;
             this.logger = logger;
+            this.mapper = mapper;
         }
 
-      
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<IEnumerable<Product>>> getProducts()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> getProducts()
         {
             logger.LogInformation("Get all Products");
-            var lst = await context.Products.ToListAsync();
-            return Ok(lst);
+            var lst = await context.GetAll();
+            return Ok(mapper.Map<ProductDto>(lst));
         }
 
-        [HttpGet("{Id:int}",Name = "getProductById")]
+        [HttpGet("{Id:int}", Name = "getProductById")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<Product>> getProductById(int Id)
+        public async Task<ActionResult<ProductDto>> getProductById(int Id)
         {
             logger.LogInformation("Gets the Product from the specified id");
 
@@ -43,25 +48,25 @@ namespace API.Controllers
                 return BadRequest();
             }
 
-            var product = await context.Products.FindAsync(Id);
-            
-            if(product is null)
+            var product = await context.Get(x => x.ProductId == Id);
+
+            if (product is null)
             {
                 logger.LogError($"Cannot find the Product with id: {Id}.");
                 return NotFound();
             }
 
-            return Ok(product);
+            return Ok(mapper.Map<ProductDto>(product));
         }
 
         [HttpGet("{Name}", Name = "getProductByName")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<Product>> getProductByName(string Name)
+        public async Task<ActionResult<ProductDto>> getProductByName(string Name)
         {
             logger.LogInformation("Gets the Product from the specified name");
 
-            var product = await context.Products.FirstOrDefaultAsync(x => x.ProductName == Name);
+            var product = await context.Get(x => x.ProductName == Name);
 
             if (string.IsNullOrWhiteSpace(Name))
             {
@@ -74,14 +79,14 @@ namespace API.Controllers
 
         [HttpPut("{id:int}", Name = "UpdateProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult> UpdateProduct([FromBody] ProductUpdateDto Product,int id)
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult> UpdateProduct([FromBody] ProductUpdateDto Product, int id)
         {
             if (id == 0) return BadRequest(ModelState);
 
             if (Product is null) return BadRequest();
 
-            var ProductToFind = await context.Products.FindAsync(id);
+            var ProductToFind = await context.Get(x => x.ProductId == id); 
 
             if (ProductToFind is null)
             {
@@ -93,11 +98,33 @@ namespace API.Controllers
             ProductToFind.ProductPrice = Product.ProductPrice;
             ProductToFind.ProductStock = Product.ProductStock;
 
-            context.Entry(ProductToFind).State = EntityState.Modified;
-
-            await context.SaveChangesAsync();
+            await context.GuardarCambios();
 
             return Ok();
+        }
+
+        [HttpPatch("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> UpdatePatch(int id, JsonPatchDocument<ProductUpdateDto> json)
+        {
+            if (json is null || id == 0) return BadRequest();
+
+            var producto = await context.Get(x => x.ProductId == id,true);
+
+            if(producto is null) return NotFound();
+
+            var productTemp = mapper.Map<ProductUpdateDto>(producto);
+
+            if (!ModelState.IsValid) return BadRequest();
+
+            json.ApplyTo(productTemp,ModelState);
+
+
+            context.Update(mapper.Map<Product>(productTemp));
+
+            return NoContent();
         }
 
     }
