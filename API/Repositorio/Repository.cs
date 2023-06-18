@@ -15,11 +15,11 @@ namespace API.Repositorio
             tabla= context.Set<T>();
         }
 
-        public Task Delete(T obj)
+        public async Task Delete(T obj)
         {
             tabla.Remove(obj);
 
-            return Task.CompletedTask;
+            await GuardarCambios();
         }
 
         public async Task<T> Get(Expression<Func<T, bool>> expression, bool tracking = false)
@@ -43,9 +43,12 @@ namespace API.Repositorio
             await context.SaveChangesAsync();
         }
 
-        public Task<T> Update(T entity)
+        public async Task Add(T obj)
         {
-            throw new NotImplementedException();
+            await context.AddAsync(obj);
+            await GuardarCambios();
         }
+
+        
     }
 }

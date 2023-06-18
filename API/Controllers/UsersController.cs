@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Dependencias.Data;
 using API.Mapper;
 using AutoMapper;
+using API.Repositorio;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace API.Controllers
 {
@@ -12,13 +14,13 @@ namespace API.Controllers
     [ApiController]
     public class UsersController : Controller
     {
-            private readonly MainContext context;
+            private readonly IUserRepository context;
             private readonly ILogger<UsersController> logger;
             private readonly IMapper mapper;
  
-            public UsersController(MainContext context, ILogger<UsersController> logger,IMapper apiMapper)
+            public UsersController(MainContext context, ILogger<UsersController> logger,IMapper apiMapper,IUserRepository repository)
             {
-                this.context = context;
+                this.context = repository;
                 this.logger = logger;
                 mapper = apiMapper;
             }
@@ -28,7 +30,7 @@ namespace API.Controllers
             public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
             {
                 logger.LogInformation("Get all Users");
-                var lst = await context.Users.ToListAsync();
+                var lst = await context.GetAll();
                 return Ok(mapper.Map<List<UserDto>>(lst));
             }
 
@@ -46,7 +48,7 @@ namespace API.Controllers
                     return BadRequest();
                 }
 
-                var Users = await context.Users.FindAsync(Id);
+                var Users = await context.Get(x => x.UserID == Id);
 
                 if (Users is null)
                 {
@@ -64,7 +66,7 @@ namespace API.Controllers
             {
                 logger.LogInformation("Gets the User from the specified name");
 
-                var Users = await context.Users.FirstOrDefaultAsync(x => x.UserName == Name);
+                var Users = await context.Get(x => x.UserName == Name);
 
                 if (string.IsNullOrWhiteSpace(Name))
                 {
@@ -80,7 +82,7 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> Post([FromBody] UserPostDto user)
         {
-            var searchUser = await context.Users.FirstOrDefaultAsync(x => x.UserName.ToUpper() == user.UserName.ToUpper() || x.Email.ToUpper() == user.Email.ToUpper());
+            var searchUser = await context.Get(x => x.UserName.ToUpper() == user.UserName.ToUpper() || x.Email.ToUpper() == user.Email.ToUpper());
             if(searchUser is not null)
             {
                 logger.LogError($"Cannot add the user {user.UserName} because it already exists");
@@ -97,9 +99,7 @@ namespace API.Controllers
             if (user is null) return BadRequest();
 
 
-            await context.Users.AddAsync(mapper.Map<User>(user));
-
-            await context.SaveChangesAsync();
+            await context.Add(mapper.Map<User>(user));
 
             return Ok();
         }
@@ -113,7 +113,7 @@ namespace API.Controllers
             
             if (userP is null) return BadRequest();
 
-            var usertofind = await context.Users.FindAsync(Id);
+            var usertofind = await context.Get(x=> x.UserID== Id);
 
             if (usertofind is null)
             {
@@ -123,9 +123,8 @@ namespace API.Controllers
 
             usertofind = mapper.Map<User>(userP);
 
-            context.Entry(usertofind).State = EntityState.Modified;
 
-            await context.SaveChangesAsync();
+            await context.GuardarCambios();
 
             return Ok();
         }
@@ -139,7 +138,7 @@ namespace API.Controllers
         {
             if(string.IsNullOrWhiteSpace(Name)) return BadRequest(ModelState);
 
-            var user = await context.Users.FirstOrDefaultAsync(x => x.UserName.ToUpper() == Name.ToUpper());
+            var user = await context.Get(x => x.UserName.ToUpper() == Name.ToUpper());
 
             if (user is null)
             {
@@ -147,11 +146,7 @@ namespace API.Controllers
                 return NotFound(ModelState);
             }
 
-            context.Users.Remove(user);
-
-            context.Users.Entry(user).State = EntityState.Deleted;
-
-           await context.SaveChangesAsync();
+            await context.Delete(user);
 
             return Ok();
         }
@@ -164,7 +159,7 @@ namespace API.Controllers
         {
             if (id == 0) return BadRequest();
 
-            var user = await context.Users.FindAsync(id);
+            var user = await context.Get(x => x.UserID == id);
 
             if (user is null)
             {
@@ -172,13 +167,34 @@ namespace API.Controllers
                 return NotFound(ModelState);
             }
 
-            context.Users.Remove(user);
-
-            context.Users.Entry(user).State = EntityState.Deleted;
-
-            await context.SaveChangesAsync();
+            context.Delete(user);
 
             return Ok();
+        }
+
+
+        [HttpPatch("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> UpdatePatch(int id, JsonPatchDocument<ProductUpdateDto> json)
+        {
+            if (json is null || id == 0) return BadRequest();
+
+            var User = await context.Get(x => x.UserID == id, true);
+
+            if (User is null) return NotFound();
+
+            var UserTemp = mapper.Map<ProductUpdateDto>(User);
+
+            if (!ModelState.IsValid) return BadRequest();
+
+            json.ApplyTo(UserTemp, ModelState);
+
+
+            context.Update(mapper.Map<User>(UserTemp));
+
+            return NoContent();
         }
 
     }  

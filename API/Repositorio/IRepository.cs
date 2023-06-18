@@ -7,7 +7,7 @@ namespace API.Repositorio
         Task<IEnumerable<T>> GetAll(bool tracking = false);
         Task<T> Get(Expression<Func<T, bool>> expression, bool tracking = false);
 
-        Task<T> Update(T entity);
+        Task Add(T obj);
 
         Task Delete(T obj);
 

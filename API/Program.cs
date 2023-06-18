@@ -2,6 +2,7 @@ using Dependencias.Data;
 using API.Mapper;
 using Dependencias.Model;
 using Microsoft.EntityFrameworkCore;
+using API.Repositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(ApiMapper));
+builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddDbContext<MainContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
