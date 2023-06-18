@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Dependencias.Model;
-using API.Dtos;
-using Microsoft.EntityFrameworkCore;
-using Dependencias.Data;
-using API.Mapper;
-using AutoMapper;
+﻿using API.Dtos;
 using API.Repositorio;
+using AutoMapper;
+using Dependencias.Data;
+using Dependencias.Model;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
@@ -14,68 +12,57 @@ namespace API.Controllers
     [ApiController]
     public class UsersController : Controller
     {
-            private readonly IUserRepository context;
-            private readonly ILogger<UsersController> logger;
-            private readonly IMapper mapper;
- 
-            public UsersController(MainContext context, ILogger<UsersController> logger,IMapper apiMapper,IUserRepository repository)
-            {
-                this.context = repository;
-                this.logger = logger;
-                mapper = apiMapper;
-            }
+        private readonly IUserRepository context;
+        private readonly ILogger<UsersController> logger;
+        private readonly IMapper mapper;
 
-            [HttpGet]
-            [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
-            {
-                logger.LogInformation("Get all Users");
-                var lst = await context.GetAll();
-                return Ok(mapper.Map<List<UserDto>>(lst));
-            }
+        public UsersController(MainContext context, ILogger<UsersController> logger, IMapper apiMapper, IUserRepository repository)
+        {
+            this.context = repository;
+            this.logger = logger;
+            mapper = apiMapper;
+        }
 
-            [HttpGet("{Id:int}", Name = "getUsersById")]
-            [ProducesResponseType(StatusCodes.Status404NotFound)]
-            [ProducesResponseType(StatusCodes.Status400BadRequest)]
-            [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<UserDto>> GetUsersById(int Id)
-            {
-                logger.LogInformation("Gets the User with the specified id");
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
+        {
+            var lst = await context.GetAll();
+            return Ok(mapper.Map<List<UserDto>>(lst));
+        }
 
-                if (Id == 0)
-                {
-                    logger.LogError($"The User with id {Id} does not exists.");
-                    return BadRequest();
-                }
+        [HttpGet("{Id:int}", Name = "getUsersById")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<UserDto>> GetUsersById(int Id)
+        {
+            if (Id == 0) return BadRequest();
 
-                var Users = await context.Get(x => x.UserID == Id);
 
-                if (Users is null)
-                {
-                    logger.LogError($"Cannot find the Users with id: {Id}.");
-                    return NotFound();
-                }
+            var Users = await context.Get(x => x.UserID == Id);
 
-                return Ok(mapper.Map<UserDto>(Users));
-            }
+            if (Users is null) return NotFound();
 
-            [HttpGet("{Name}", Name = "getUsersByName")]
-            [ProducesResponseType(StatusCodes.Status404NotFound)]
-            [ProducesResponseType(StatusCodes.Status200OK)]
-            public async Task<ActionResult<UserDto>> GetUsersByName(string Name)
-            {
-                logger.LogInformation("Gets the User from the specified name");
+            return Ok(mapper.Map<UserDto>(Users));
+        }
 
-                var Users = await context.Get(x => x.UserName == Name);
+        [HttpGet("{str}", Name = "GetUsersByString")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<UserDto>> GetUsersByString(string str)
+        {
 
-                if (string.IsNullOrWhiteSpace(Name))
-                {
-                    logger.LogError($"Cannot find the User with the name: {Name}.");
-                    return NotFound();
-                }
+            if (string.IsNullOrWhiteSpace(str)) return BadRequest();
 
-                return Ok(mapper.Map<UserDto>(Users));
-            }
+            var Users = await context.Get(x => x.UserName == str || x.Email == str);
+
+            if (Users is null) return NotFound();
+
+
+            return Ok(mapper.Map<UserDto>(Users));
+        }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -83,18 +70,11 @@ namespace API.Controllers
         public async Task<ActionResult> Post([FromBody] UserPostDto user)
         {
             var searchUser = await context.Get(x => x.UserName.ToUpper() == user.UserName.ToUpper() || x.Email.ToUpper() == user.Email.ToUpper());
-            if(searchUser is not null)
-            {
-                logger.LogError($"Cannot add the user {user.UserName} because it already exists");
-                return BadRequest();
-            }
+            if (searchUser is not null) return BadRequest();
 
 
-            if (!ModelState.IsValid)
-            {
-                logger.LogError("The parameters sent were invalid");
-                return BadRequest(ModelState);
-            }
+
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             if (user is null) return BadRequest();
 
@@ -104,22 +84,21 @@ namespace API.Controllers
             return Ok();
         }
 
-        [HttpPut("{Id:int}",Name = "UpdateUser")]
+        [HttpPut("{Id:int}", Name = "UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> UpdateUser([FromBody] UserUpdateDto userP, int Id)
         {
             if (Id == 0) return BadRequest();
-            
+
             if (userP is null) return BadRequest();
 
-            var usertofind = await context.Get(x=> x.UserID== Id);
+            var usertofind = await context.Get(x => x.UserID == Id);
 
             if (usertofind is null)
-            {
-                logger.LogError($"Cannot find the User.");
+
                 return NotFound();
-            }
+
 
             usertofind = mapper.Map<User>(userP);
 
@@ -130,13 +109,13 @@ namespace API.Controllers
         }
 
 
-        [HttpDelete("Name",Name ="DeleteUserByName")]
+        [HttpDelete("Name", Name = "DeleteUserByName")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> DeleteUserByName(string Name)
         {
-            if(string.IsNullOrWhiteSpace(Name)) return BadRequest(ModelState);
+            if (string.IsNullOrWhiteSpace(Name)) return BadRequest(ModelState);
 
             var user = await context.Get(x => x.UserName.ToUpper() == Name.ToUpper());
 
@@ -197,5 +176,5 @@ namespace API.Controllers
             return NoContent();
         }
 
-    }  
+    }
 }
