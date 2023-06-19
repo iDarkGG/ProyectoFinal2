@@ -15,31 +15,27 @@ namespace ProyectoFinal2._0
         public FacturacionFx()
         {
             InitializeComponent();
-
-            fxFormaDePagoEfectivo1.BringToFront();
-
-        }
-
-        private void fxPagoEfectivo2_Load(object sender, EventArgs e)
-        {
+           
+           
 
         }
 
+    
         private void checkTarjetaDeCredito_CheckedChanged(object sender, EventArgs e)
         {
             if (checkTarjetaDeCredito.Checked == true)
             {
-                fxFormaDePagoTarjeta1.BringToFront();
+                fxFormaTarjeta1.BringToFront();
             }
             else
             {
-                fxFormaDePagoEfectivo1.BringToFront();
+                fxFormaEfectivo1.BringToFront();
             }
         }
 
         private void FacturacionFx_Load(object sender, EventArgs e)
         {
-
+            fxFormaEfectivo1.BringToFront(); ;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal2._0.FormsProducts
 {
-    public partial class FxFormaDePagoTarjeta : UserControl
+    public partial class FxFormaTarjeta : UserControl
     {
-        public FxFormaDePagoTarjeta()
+        public FxFormaTarjeta()
         {
             InitializeComponent();
         }

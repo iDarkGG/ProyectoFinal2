@@ -17,7 +17,7 @@ namespace ProyectoFinal2._0
         {
             InitializeComponent();
             SidePanel.Height = btnInicio.Height;
-            fxInicio2.BringToFront();
+            fxInicio3.BringToFront();
 
         }
 
@@ -25,21 +25,21 @@ namespace ProyectoFinal2._0
         {
             SidePanel.Height = btnInicio.Height;
             SidePanel.Top = btnInicio.Top;
-            fxInicio2.BringToFront();
+            fxInicio3.BringToFront();
         }
 
         private void btnProcesadores_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnProcesadores.Height;
             SidePanel.Top = btnProcesadores.Top;
-            fxProcesadores2.BringToFront();
+            fxProcesadores3.BringToFront();
         }
 
         private void btnTarjetaGraficas_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnTarjetaGraficas.Height;
             SidePanel.Top = btnTarjetaGraficas.Top;
-            fxTarjetasGraficas1.BringToFront();
+            fxTarjetasGraficas2.BringToFront();
 
         }
 
@@ -47,42 +47,42 @@ namespace ProyectoFinal2._0
         {
             SidePanel.Height = btnMemoriaRam.Height;
             SidePanel.Top = btnMemoriaRam.Top;
-            fxMemoriasRam1.BringToFront();
+            fxMemoriasRam2.BringToFront();
         }
 
         private void btnSSD_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnSSD.Height;
             SidePanel.Top = btnSSD.Top;
-            fxssd1.BringToFront();
+            fxssd2.BringToFront();
         }
 
         private void btnFuenteDePoder_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnFuenteDePoder.Height;
             SidePanel.Top = btnFuenteDePoder.Top;
-            fxFuentesDePoder1.BringToFront();
+            fxFuentesDePoder2.BringToFront();
         }
 
         private void btnCase_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnCase.Height;
             SidePanel.Top = btnCase.Top;
-            fxCase1.BringToFront();
+            fxCase2.BringToFront();
         }
 
         private void btnMonitores_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnMonitores.Height;
             SidePanel.Top = btnMonitores.Top;
-            fxMonitores1.BringToFront();
+            fxMonitores2.BringToFront();
         }
 
         private void btnTecladoyMause_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnTecladoyMause.Height;
             SidePanel.Top = btnTecladoyMause.Top;
-            fxTecladoMause1.BringToFront();
+            fxTecladoMause2.BringToFront();
         }
 
         private void btnCerrarAplicacion_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace ProyectoFinal2._0
 
         private void btnCarrito_Click(object sender, EventArgs e)
         {
-            carritoFx1.BringToFront();
+            carritoFx2.BringToFront();
         }
     }
 }
