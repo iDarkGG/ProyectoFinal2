@@ -16,5 +16,10 @@ namespace ProyectoFinal2._0.FormsProducts
         {
             InitializeComponent();
         }
+
+        private void FxMonitores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
