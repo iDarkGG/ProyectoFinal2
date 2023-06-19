@@ -1,6 +1,7 @@
 ﻿using API.Dtos;
 using API.Repositorio;
 using AutoMapper;
+using Dependencias.Email;
 using Dependencias.Model;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -29,9 +30,8 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ProductDto>>> getProducts()
         {
-            logger.LogInformation("Get all Products");
             var lst = await context.GetAll();
-            return Ok(mapper.Map<ProductDto>(lst));
+            return Ok(mapper.Map<IEnumerable<ProductDto>>(lst));
         }
 
         [HttpGet("{Id:int}", Name = "getProductById")]
