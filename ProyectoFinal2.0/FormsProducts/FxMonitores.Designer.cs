@@ -140,9 +140,9 @@
             label6.AutoSize = true;
             label6.Location = new Point(13, 206);
             label6.Name = "label6";
-            label6.Size = new Size(154, 45);
+            label6.Size = new Size(144, 60);
             label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 200Mb/s";
+            label6.Text = "onitor de juegos AOC G2 \r\nde 32 pulgadas con panel \r\nVA de resolución FHD\r\n 1920 x 1080";
             // 
             // pictureBox2
             // 
@@ -217,11 +217,11 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(13, 206);
+            label18.Location = new Point(11, 191);
             label18.Name = "label18";
-            label18.Size = new Size(154, 45);
+            label18.Size = new Size(171, 75);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\nSSD M.2  1Ttb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label18.Text = "Con cuatro veces la resolución \r\nde Full HD, disfruta de una\r\n impresionante claridad\r\n de imagen con este \r\nmonitor 4K UHD";
             // 
             // pictureBox6
             // 
@@ -298,9 +298,9 @@
             label15.AutoSize = true;
             label15.Location = new Point(13, 206);
             label15.Name = "label15";
-            label15.Size = new Size(154, 45);
+            label15.Size = new Size(144, 60);
             label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\nSSD M2 256Gb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label15.Text = "Pantalla IPS Full HD de\r\n 24 pulgadas (1920 x 1080)\r\nBisel ultra delgado\r\n. Modo DAS: sí";
             // 
             // pictureBox5
             // 
@@ -377,9 +377,9 @@
             label12.AutoSize = true;
             label12.Location = new Point(13, 206);
             label12.Name = "label12";
-            label12.Size = new Size(154, 45);
+            label12.Size = new Size(150, 60);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 100Mb/s\r\n";
+            label12.Text = "Rendimiento de pantalla: \r\nla resolución HD Plus de \r\n1600 x 900 es perfecta para \r\nel trabajo diario";
             // 
             // pictureBox4
             // 
@@ -456,9 +456,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(13, 206);
             label9.Name = "label9";
-            label9.Size = new Size(154, 45);
+            label9.Size = new Size(168, 60);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\nSSD 1.92Tb velocidad de\r\ndescarga 20Gb/s\r\n";
+            label9.Text = "Comparte la vista panorámica:\r\n el monitor de 23.8 pulgadas \r\nadopta una nueva generación\r\n de pantalla VA";
             // 
             // pictureBox3
             // 
@@ -482,7 +482,7 @@
             Controls.Add(panel4);
             Controls.Add(panel3);
             Name = "FxMonitores";
-            Size = new Size(746, 429);
+            Size = new Size(729, 429);
             Load += FxMonitores_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

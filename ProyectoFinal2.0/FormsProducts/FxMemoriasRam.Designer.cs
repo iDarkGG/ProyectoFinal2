@@ -40,12 +40,14 @@
             comboBox1 = new ComboBox();
             label5 = new Label();
             button2 = new Button();
+            label6 = new Label();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
             label2 = new Label();
             cboProcesador1 = new ComboBox();
             label3 = new Label();
             button1 = new Button();
+            label1 = new Label();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
             label10 = new Label();
@@ -68,8 +70,6 @@
             button6 = new Button();
             label18 = new Label();
             pictureBox6 = new PictureBox();
-            label6 = new Label();
-            label1 = new Label();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
@@ -105,9 +105,9 @@
             label7.ForeColor = Color.FromArgb(0, 80, 200);
             label7.Location = new Point(27, 163);
             label7.Name = "label7";
-            label7.Size = new Size(140, 26);
+            label7.Size = new Size(143, 26);
             label7.TabIndex = 8;
-            label7.Text = "XPG MEMORIA 16G DDR5 \r\n                5200MHZ\r\n";
+            label7.Text = "XPG MEMORIA 16G DDR5  \r\n        5200MHZ\r\n";
             // 
             // comboBox2
             // 
@@ -149,9 +149,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(13, 206);
             label9.Name = "label9";
-            label9.Size = new Size(154, 60);
+            label9.Size = new Size(156, 60);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label9.Text = "Nuevo punto de referencia\r\n de velocidad en la memoria\r\n de juegosDisipador de \r\ncalor bellamente \r\n";
             // 
             // pictureBox3
             // 
@@ -223,6 +223,15 @@
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(9, 206);
+            label6.Name = "label6";
+            label6.Size = new Size(168, 45);
+            label6.TabIndex = 4;
+            label6.Text = "Optimizado para procesadores\r\n y plataformas de próxima\r\n generación.";
+            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.MEMORIA_DDR4_16GB_2666MHZ_CRUCIAL;
@@ -293,6 +302,15 @@
             button1.Text = "Agregar";
             button1.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 206);
+            label1.Name = "label1";
+            label1.Size = new Size(150, 60);
+            label1.TabIndex = 4;
+            label1.Text = "Impresionante iluminación\r\n RGB con estilo agresivo\r\nTecnología patentada \r\nde sincronización infrarroja";
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.MEMORIA_DDR4_8GB_3200MHZ_HYPERX_KINGSTON;
@@ -322,7 +340,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.FromArgb(0, 80, 200);
-            label10.Location = new Point(27, 163);
+            label10.Location = new Point(27, 148);
             label10.Name = "label10";
             label10.Size = new Size(140, 26);
             label10.TabIndex = 8;
@@ -366,11 +384,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(13, 206);
+            label12.Location = new Point(3, 176);
             label12.Name = "label12";
-            label12.Size = new Size(154, 60);
+            label12.Size = new Size(169, 90);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label12.Text = "Estabilidad  para overclocking\r\nMayor eficiencia\r\nIntel XMP 3.0 listo y certificado\r\nPlug N Play a 5200 MT/s\r\nDiseño de disipador de \r\ncalor de perfil bajo";
             // 
             // pictureBox4
             // 
@@ -401,7 +419,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.FromArgb(0, 80, 200);
-            label13.Location = new Point(26, 163);
+            label13.Location = new Point(22, 163);
             label13.Name = "label13";
             label13.Size = new Size(141, 26);
             label13.TabIndex = 8;
@@ -445,11 +463,11 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(13, 206);
+            label15.Location = new Point(3, 189);
             label15.Name = "label15";
-            label15.Size = new Size(154, 60);
+            label15.Size = new Size(182, 75);
             label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label15.Text = "Los chips de memoria ordenados\r\n a mano garantizan un alto \r\nrendimiento con un generoso \r\nespacio de overclocing. \r\nVelocidad SPD: 2133 MHz";
             // 
             // pictureBox5
             // 
@@ -526,9 +544,9 @@
             label18.AutoSize = true;
             label18.Location = new Point(13, 206);
             label18.Name = "label18";
-            label18.Size = new Size(154, 60);
+            label18.Size = new Size(147, 60);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label18.Text = "All ValueRAM memory is\r\n 100 Percent tested\r\nValueRAM is ideal for\r\n system builders and those";
             // 
             // pictureBox6
             // 
@@ -539,24 +557,6 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 3;
             pictureBox6.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 60);
-            label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 206);
-            label1.Name = "label1";
-            label1.Size = new Size(154, 60);
-            label1.TabIndex = 4;
-            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
             // 
             // FxMemoriasRam
             // 
@@ -571,7 +571,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FxMemoriasRam";
-            Size = new Size(712, 429);
+            Size = new Size(695, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

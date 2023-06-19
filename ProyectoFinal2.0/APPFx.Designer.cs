@@ -46,17 +46,18 @@
             pictureBox1 = new PictureBox();
             btnCerrarAplicacion = new Button();
             panelContenedorProductos = new Panel();
-            btnCarrito = new PictureBox();
-            carritoFx2 = new FormsProducts.CarritoFx();
-            fxCase2 = new FormsProducts.FxCase();
-            fxFuentesDePoder2 = new FormsProducts.FxFuentesDePoder();
-            fxMemoriasRam2 = new FormsProducts.FxMemoriasRam();
-            fxMonitores2 = new FormsProducts.FxMonitores();
-            fxProcesadores3 = new FxProcesadores();
-            fxssd2 = new FormsProducts.FxSSD();
-            fxTarjetasGraficas2 = new FxTarjetasGraficas();
-            fxTecladoMause2 = new FormsProducts.FxTecladoMause();
             fxInicio3 = new FxInicio();
+            fxTecladoMause2 = new FormsProducts.FxTecladoMause();
+            fxTarjetasGraficas2 = new FxTarjetasGraficas();
+            fxssd2 = new FormsProducts.FxSSD();
+            fxProcesadores3 = new FxProcesadores();
+            fxMonitores2 = new FormsProducts.FxMonitores();
+            fxMemoriasRam2 = new FormsProducts.FxMemoriasRam();
+            fxFuentesDePoder2 = new FormsProducts.FxFuentesDePoder();
+            fxCase2 = new FormsProducts.FxCase();
+            carritoFx2 = new FormsProducts.CarritoFx();
+            btnCarrito = new PictureBox();
+            fxPlacasMadres1 = new FormsProducts.FxPlacasMadres();
             panelContenedorBotones.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -91,7 +92,7 @@
             btnPlacasMadre.FlatStyle = FlatStyle.Flat;
             btnPlacasMadre.Font = new Font("Adobe Heiti Std R", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnPlacasMadre.ForeColor = Color.White;
-            btnPlacasMadre.Image = Properties.Resources.image__2_;
+            btnPlacasMadre.Image = Properties.Resources.image__11_;
             btnPlacasMadre.ImageAlign = ContentAlignment.MiddleLeft;
             btnPlacasMadre.Location = new Point(12, 199);
             btnPlacasMadre.Name = "btnPlacasMadre";
@@ -100,6 +101,7 @@
             btnPlacasMadre.Text = "      Placas Madre";
             btnPlacasMadre.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnPlacasMadre.UseVisualStyleBackColor = true;
+            btnPlacasMadre.Click += btnPlacasMadre_Click;
             // 
             // btnTarjetaGraficas
             // 
@@ -327,10 +329,110 @@
             panelContenedorProductos.Controls.Add(fxFuentesDePoder2);
             panelContenedorProductos.Controls.Add(fxCase2);
             panelContenedorProductos.Controls.Add(carritoFx2);
+            panelContenedorProductos.Controls.Add(fxPlacasMadres1);
             panelContenedorProductos.Location = new Point(217, 141);
             panelContenedorProductos.Name = "panelContenedorProductos";
             panelContenedorProductos.Size = new Size(746, 429);
             panelContenedorProductos.TabIndex = 3;
+            // 
+            // fxInicio3
+            // 
+            fxInicio3.BackColor = Color.White;
+            fxInicio3.Dock = DockStyle.Fill;
+            fxInicio3.Location = new Point(0, 0);
+            fxInicio3.Name = "fxInicio3";
+            fxInicio3.Size = new Size(746, 429);
+            fxInicio3.TabIndex = 5;
+            // 
+            // fxTecladoMause2
+            // 
+            fxTecladoMause2.AutoScroll = true;
+            fxTecladoMause2.BackColor = Color.White;
+            fxTecladoMause2.Dock = DockStyle.Fill;
+            fxTecladoMause2.ImeMode = ImeMode.On;
+            fxTecladoMause2.Location = new Point(0, 0);
+            fxTecladoMause2.Name = "fxTecladoMause2";
+            fxTecladoMause2.Size = new Size(746, 429);
+            fxTecladoMause2.TabIndex = 5;
+            // 
+            // fxTarjetasGraficas2
+            // 
+            fxTarjetasGraficas2.AutoScroll = true;
+            fxTarjetasGraficas2.BackColor = Color.White;
+            fxTarjetasGraficas2.Dock = DockStyle.Fill;
+            fxTarjetasGraficas2.Location = new Point(0, 0);
+            fxTarjetasGraficas2.Name = "fxTarjetasGraficas2";
+            fxTarjetasGraficas2.Size = new Size(746, 429);
+            fxTarjetasGraficas2.TabIndex = 5;
+            // 
+            // fxssd2
+            // 
+            fxssd2.AutoScroll = true;
+            fxssd2.BackColor = Color.White;
+            fxssd2.Dock = DockStyle.Fill;
+            fxssd2.Location = new Point(0, 0);
+            fxssd2.Name = "fxssd2";
+            fxssd2.Size = new Size(746, 429);
+            fxssd2.TabIndex = 5;
+            // 
+            // fxProcesadores3
+            // 
+            fxProcesadores3.AutoScroll = true;
+            fxProcesadores3.BackColor = Color.White;
+            fxProcesadores3.Dock = DockStyle.Fill;
+            fxProcesadores3.Location = new Point(0, 0);
+            fxProcesadores3.Name = "fxProcesadores3";
+            fxProcesadores3.Size = new Size(746, 429);
+            fxProcesadores3.TabIndex = 5;
+            // 
+            // fxMonitores2
+            // 
+            fxMonitores2.AutoScroll = true;
+            fxMonitores2.BackColor = Color.White;
+            fxMonitores2.Dock = DockStyle.Fill;
+            fxMonitores2.Location = new Point(0, 0);
+            fxMonitores2.Name = "fxMonitores2";
+            fxMonitores2.Size = new Size(746, 429);
+            fxMonitores2.TabIndex = 5;
+            // 
+            // fxMemoriasRam2
+            // 
+            fxMemoriasRam2.AutoScroll = true;
+            fxMemoriasRam2.BackColor = Color.White;
+            fxMemoriasRam2.Dock = DockStyle.Fill;
+            fxMemoriasRam2.Location = new Point(0, 0);
+            fxMemoriasRam2.Name = "fxMemoriasRam2";
+            fxMemoriasRam2.Size = new Size(746, 429);
+            fxMemoriasRam2.TabIndex = 5;
+            // 
+            // fxFuentesDePoder2
+            // 
+            fxFuentesDePoder2.AutoScroll = true;
+            fxFuentesDePoder2.BackColor = Color.White;
+            fxFuentesDePoder2.Dock = DockStyle.Fill;
+            fxFuentesDePoder2.Location = new Point(0, 0);
+            fxFuentesDePoder2.Name = "fxFuentesDePoder2";
+            fxFuentesDePoder2.Size = new Size(746, 429);
+            fxFuentesDePoder2.TabIndex = 5;
+            // 
+            // fxCase2
+            // 
+            fxCase2.AutoScroll = true;
+            fxCase2.BackColor = Color.White;
+            fxCase2.Dock = DockStyle.Fill;
+            fxCase2.Location = new Point(0, 0);
+            fxCase2.Name = "fxCase2";
+            fxCase2.Size = new Size(746, 429);
+            fxCase2.TabIndex = 1;
+            // 
+            // carritoFx2
+            // 
+            carritoFx2.BackColor = Color.White;
+            carritoFx2.Dock = DockStyle.Fill;
+            carritoFx2.Location = new Point(0, 0);
+            carritoFx2.Name = "carritoFx2";
+            carritoFx2.Size = new Size(746, 429);
+            carritoFx2.TabIndex = 0;
             // 
             // btnCarrito
             // 
@@ -343,103 +445,15 @@
             btnCarrito.TabStop = false;
             btnCarrito.Click += btnCarrito_Click;
             // 
-            // carritoFx2
+            // fxPlacasMadres1
             // 
-            carritoFx2.BackColor = Color.White;
-            carritoFx2.Dock = DockStyle.Fill;
-            carritoFx2.Location = new Point(0, 0);
-            carritoFx2.Name = "carritoFx2";
-            carritoFx2.Size = new Size(746, 429);
-            carritoFx2.TabIndex = 0;
-            // 
-            // fxCase2
-            // 
-            fxCase2.AutoScroll = true;
-            fxCase2.BackColor = Color.White;
-            fxCase2.Dock = DockStyle.Fill;
-            fxCase2.Location = new Point(0, 0);
-            fxCase2.Name = "fxCase2";
-            fxCase2.Size = new Size(746, 429);
-            fxCase2.TabIndex = 1;
-            // 
-            // fxFuentesDePoder2
-            // 
-            fxFuentesDePoder2.AutoScroll = true;
-            fxFuentesDePoder2.BackColor = Color.White;
-            fxFuentesDePoder2.Dock = DockStyle.Fill;
-            fxFuentesDePoder2.Location = new Point(0, 0);
-            fxFuentesDePoder2.Name = "fxFuentesDePoder2";
-            fxFuentesDePoder2.Size = new Size(746, 429);
-            fxFuentesDePoder2.TabIndex = 5;
-            // 
-            // fxMemoriasRam2
-            // 
-            fxMemoriasRam2.AutoScroll = true;
-            fxMemoriasRam2.BackColor = Color.White;
-            fxMemoriasRam2.Dock = DockStyle.Fill;
-            fxMemoriasRam2.Location = new Point(0, 0);
-            fxMemoriasRam2.Name = "fxMemoriasRam2";
-            fxMemoriasRam2.Size = new Size(746, 429);
-            fxMemoriasRam2.TabIndex = 5;
-            // 
-            // fxMonitores2
-            // 
-            fxMonitores2.AutoScroll = true;
-            fxMonitores2.BackColor = Color.White;
-            fxMonitores2.Dock = DockStyle.Fill;
-            fxMonitores2.Location = new Point(0, 0);
-            fxMonitores2.Name = "fxMonitores2";
-            fxMonitores2.Size = new Size(746, 429);
-            fxMonitores2.TabIndex = 5;
-            // 
-            // fxProcesadores3
-            // 
-            fxProcesadores3.AutoScroll = true;
-            fxProcesadores3.BackColor = Color.White;
-            fxProcesadores3.Dock = DockStyle.Fill;
-            fxProcesadores3.Location = new Point(0, 0);
-            fxProcesadores3.Name = "fxProcesadores3";
-            fxProcesadores3.Size = new Size(746, 429);
-            fxProcesadores3.TabIndex = 5;
-            // 
-            // fxssd2
-            // 
-            fxssd2.AutoScroll = true;
-            fxssd2.BackColor = Color.White;
-            fxssd2.Dock = DockStyle.Fill;
-            fxssd2.Location = new Point(0, 0);
-            fxssd2.Name = "fxssd2";
-            fxssd2.Size = new Size(746, 429);
-            fxssd2.TabIndex = 5;
-            // 
-            // fxTarjetasGraficas2
-            // 
-            fxTarjetasGraficas2.AutoScroll = true;
-            fxTarjetasGraficas2.BackColor = Color.White;
-            fxTarjetasGraficas2.Dock = DockStyle.Fill;
-            fxTarjetasGraficas2.Location = new Point(0, 0);
-            fxTarjetasGraficas2.Name = "fxTarjetasGraficas2";
-            fxTarjetasGraficas2.Size = new Size(746, 429);
-            fxTarjetasGraficas2.TabIndex = 5;
-            // 
-            // fxTecladoMause2
-            // 
-            fxTecladoMause2.AutoScroll = true;
-            fxTecladoMause2.BackColor = Color.White;
-            fxTecladoMause2.Dock = DockStyle.Fill;
-            fxTecladoMause2.Location = new Point(0, 0);
-            fxTecladoMause2.Name = "fxTecladoMause2";
-            fxTecladoMause2.Size = new Size(746, 429);
-            fxTecladoMause2.TabIndex = 5;
-            // 
-            // fxInicio3
-            // 
-            fxInicio3.BackColor = Color.White;
-            fxInicio3.Dock = DockStyle.Fill;
-            fxInicio3.Location = new Point(0, 0);
-            fxInicio3.Name = "fxInicio3";
-            fxInicio3.Size = new Size(746, 429);
-            fxInicio3.TabIndex = 5;
+            fxPlacasMadres1.AutoScroll = true;
+            fxPlacasMadres1.BackColor = Color.White;
+            fxPlacasMadres1.Dock = DockStyle.Fill;
+            fxPlacasMadres1.Location = new Point(0, 0);
+            fxPlacasMadres1.Name = "fxPlacasMadres1";
+            fxPlacasMadres1.Size = new Size(746, 429);
+            fxPlacasMadres1.TabIndex = 5;
             // 
             // APPFx
             // 
@@ -509,5 +523,6 @@
         private FormsProducts.FxFuentesDePoder fxFuentesDePoder2;
         private FormsProducts.FxCase fxCase2;
         private FormsProducts.CarritoFx carritoFx2;
+        private FormsProducts.FxPlacasMadres fxPlacasMadres1;
     }
 }

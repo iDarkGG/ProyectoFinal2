@@ -150,9 +150,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(13, 206);
             label9.Name = "label9";
-            label9.Size = new Size(154, 60);
+            label9.Size = new Size(162, 60);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label9.Text = "Three included addressable \r\nRGB fans flood the build \r\nwith lighting while providing \r\nconsiderable airflow.";
             // 
             // pictureBox3
             // 
@@ -228,11 +228,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
+            label6.Location = new Point(20, 206);
             label6.Name = "label6";
-            label6.Size = new Size(154, 60);
+            label6.Size = new Size(147, 60);
             label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label6.Text = "tipo de caja ATX Full Tower\r\nCristal templado frontal\r\n + aluminio Cristal \r\ntemplado lateral";
             // 
             // pictureBox2
             // 
@@ -309,9 +309,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(13, 206);
             label1.Name = "label1";
-            label1.Size = new Size(154, 60);
+            label1.Size = new Size(148, 60);
             label1.TabIndex = 4;
-            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label1.Text = "Vistas panorámicas: \r\nsin pilar de esquina. El Y60 \r\ncuenta con un diseño\r\n de vidrio templado";
             // 
             // pictureBox1
             // 
@@ -386,11 +386,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(13, 206);
+            label12.Location = new Point(0, 206);
             label12.Name = "label12";
-            label12.Size = new Size(154, 60);
+            label12.Size = new Size(191, 45);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label12.Text = "La malla poligonal cuenta\r\n con un contorno tridimensional \r\ny también es capaz de proporciona";
             // 
             // pictureBox4
             // 
@@ -469,7 +469,7 @@
             label15.Name = "label15";
             label15.Size = new Size(154, 60);
             label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label15.Text = "Panel frontal de malla\r\nConsumo de rendimiento\r\nVentiladores LED RGB\r\nControl de iluminación RGB";
             // 
             // pictureBox5
             // 
@@ -546,9 +546,9 @@
             label18.AutoSize = true;
             label18.Location = new Point(13, 206);
             label18.Name = "label18";
-            label18.Size = new Size(154, 60);
+            label18.Size = new Size(151, 60);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label18.Text = "Fuerte flujo de aire. El TG6 \r\nRGB tiene tres ventiladores\r\n RGB preinstalados de 4.724\r\n in direccionables";
             // 
             // pictureBox6
             // 
@@ -573,7 +573,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FxCase";
-            Size = new Size(746, 429);
+            Size = new Size(729, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

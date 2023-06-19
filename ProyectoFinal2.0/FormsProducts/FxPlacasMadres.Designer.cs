@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal2._0.FormsProducts
 {
-    partial class FxTecladoMause
+    partial class FxPlacasMadres
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -63,13 +63,6 @@
             button3 = new Button();
             label9 = new Label();
             pictureBox3 = new PictureBox();
-            panel1 = new Panel();
-            label16 = new Label();
-            comboBox6 = new ComboBox();
-            label7 = new Label();
-            button1 = new Button();
-            label10 = new Label();
-            pictureBox1 = new PictureBox();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel6.SuspendLayout();
@@ -80,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -93,10 +84,10 @@
             panel2.Controls.Add(button2);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(26, 26);
+            panel2.Location = new Point(21, 19);
             panel2.Name = "panel2";
             panel2.Size = new Size(185, 322);
-            panel2.TabIndex = 27;
+            panel2.TabIndex = 33;
             // 
             // label1
             // 
@@ -105,9 +96,9 @@
             label1.ForeColor = Color.FromArgb(0, 80, 200);
             label1.Location = new Point(0, 162);
             label1.Name = "label1";
-            label1.Size = new Size(196, 26);
+            label1.Size = new Size(185, 26);
             label1.TabIndex = 27;
-            label1.Text = "TECLADO MECANICO LOGITECH USB \r\n       G PRO LEAGUE OF LEGENDS";
+            label1.Text = "TARJETA MADRE ATX ASUS PRIME \r\nZ690-P WIFI INTEL LGA 1700 12GEN";
             // 
             // comboBox1
             // 
@@ -128,7 +119,7 @@
             label5.Name = "label5";
             label5.Size = new Size(64, 18);
             label5.TabIndex = 6;
-            label5.Text = "$ 112.50";
+            label5.Text = "$ 295.25";
             // 
             // button2
             // 
@@ -147,15 +138,15 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(9, 205);
+            label6.Location = new Point(0, 191);
             label6.Name = "label6";
-            label6.Size = new Size(159, 60);
+            label6.Size = new Size(196, 60);
             label6.TabIndex = 4;
-            label6.Text = "LIGHTSPEED Wireless ofrece\r\n un rendimiento profesional\r\n con flexibilidad y libertad de\r\n cables. ";
+            label6.Text = "listo para procesadores Intel \r\nCore de 12ª generación, compatible\r\n con PCIe 5.0y DDR5 y listo para\r\n Windows 11 listo";
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.TECLADO_MECANICO_LOGITECH_USB_G_PRO_LEAGUE_OF_LEGENDS_920_010533;
+            pictureBox2.Image = Properties.Resources.TARJETA_MADRE_ATX_ASUS_PRIME_Z690_P_WIFI_INTEL_LGA_1700_12GEN;
             pictureBox2.Location = new Point(9, 9);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(167, 150);
@@ -172,10 +163,10 @@
             panel6.Controls.Add(button6);
             panel6.Controls.Add(label18);
             panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(250, 361);
+            panel6.Location = new Point(357, 351);
             panel6.Name = "panel6";
             panel6.Size = new Size(185, 322);
-            panel6.TabIndex = 28;
+            panel6.TabIndex = 34;
             // 
             // label13
             // 
@@ -184,9 +175,9 @@
             label13.ForeColor = Color.FromArgb(0, 80, 200);
             label13.Location = new Point(3, 163);
             label13.Name = "label13";
-            label13.Size = new Size(179, 26);
+            label13.Size = new Size(180, 39);
             label13.TabIndex = 34;
-            label13.Text = "MOUSE LOGITECH INALAMBRICO \r\n       G604 LIGHTSPEED GAMING";
+            label13.Text = "  TARJETA MADRE MICRO ATX \r\nGIGABYTE H610M H D4 INTEL LGA \r\n                 1700 12VA GEN";
             // 
             // comboBox5
             // 
@@ -205,9 +196,9 @@
             label17.ForeColor = Color.Blue;
             label17.Location = new Point(13, 271);
             label17.Name = "label17";
-            label17.Size = new Size(56, 18);
+            label17.Size = new Size(64, 18);
             label17.TabIndex = 6;
-            label17.Text = "$ 88.44";
+            label17.Text = "$ 106.52";
             // 
             // button6
             // 
@@ -226,15 +217,15 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(13, 206);
+            label18.Location = new Point(0, 202);
             label18.Name = "label18";
-            label18.Size = new Size(164, 60);
+            label18.Size = new Size(197, 60);
             label18.TabIndex = 4;
-            label18.Text = "Carga inalámbrica Power Play\r\n: nunca te preocupes por \r\nla duración de la batería \r\nde nuevo.";
+            label18.Text = "Soporta procesadores Intel Core\r\n Pentium Celeron de 12ª generación\r\n para enchufe LGA 1700\r\nSoporta memoria DDR4";
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.MOUSE_LOGITECH_INALAMBRICO_G604_LIGHTSPEED_GAMING;
+            pictureBox6.Image = Properties.Resources.TARJETA_MADRE_MICRO_ATX_GIGABYTE_H610M_H_D4_INTEL_LGA_1700_12VA_GEN;
             pictureBox6.Location = new Point(10, 10);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(167, 150);
@@ -251,21 +242,21 @@
             panel5.Controls.Add(button5);
             panel5.Controls.Add(label15);
             panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(26, 361);
+            panel5.Location = new Point(106, 351);
             panel5.Name = "panel5";
             panel5.Size = new Size(185, 322);
-            panel5.TabIndex = 31;
+            panel5.TabIndex = 37;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(0, 80, 200);
-            label3.Location = new Point(32, 163);
+            label3.Location = new Point(0, 163);
             label3.Name = "label3";
-            label3.Size = new Size(126, 26);
+            label3.Size = new Size(187, 39);
             label3.TabIndex = 33;
-            label3.Text = "MOUSE RAZER GAMER \r\n     DEATHADDER V2";
+            label3.Text = " TARJETA MADRE MICRO ATX \r\nGIGABYTE B660M DS3H DDR4 INTEL\r\n              LGA 1700 12VA GEN";
             // 
             // comboBox4
             // 
@@ -284,9 +275,9 @@
             label14.ForeColor = Color.Blue;
             label14.Location = new Point(13, 271);
             label14.Name = "label14";
-            label14.Size = new Size(56, 18);
+            label14.Size = new Size(64, 18);
             label14.TabIndex = 6;
-            label14.Text = "$ 58.00";
+            label14.Text = "$ 173.06";
             // 
             // button5
             // 
@@ -305,15 +296,15 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(13, 206);
+            label15.Location = new Point(0, 202);
             label15.Name = "label15";
-            label15.Size = new Size(167, 60);
+            label15.Size = new Size(184, 60);
             label15.TabIndex = 4;
-            label15.Text = "Sensor óptico Focus+ 20K DPI:\r\n se calibra automáticamente \r\na través de la alfombrilla \r\ndel mouse";
+            label15.Text = "Enchufe AMD AM5: compatible\r\n con procesadores AMD Ryzen\r\n serie 7000 Compatible con DDR5:\r\n 4 DIMM SMD con AMD EXPO ";
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.MOUSE_ASUS_USB_P511_ROG_CHAKRAM_CORE;
+            pictureBox5.Image = Properties.Resources.TARJETA_MADRE_MICRO_ATX_GIGABYTE_B660M_DS3H_DDR4_INTEL_LGA_1700_12VA_GEN;
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(167, 150);
@@ -330,21 +321,21 @@
             panel4.Controls.Add(button4);
             panel4.Controls.Add(label12);
             panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(488, 26);
+            panel4.Location = new Point(483, 19);
             panel4.Name = "panel4";
             panel4.Size = new Size(185, 322);
-            panel4.TabIndex = 29;
+            panel4.TabIndex = 35;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(0, 80, 200);
-            label2.Location = new Point(0, 162);
+            label2.Location = new Point(3, 162);
             label2.Name = "label2";
-            label2.Size = new Size(197, 26);
+            label2.Size = new Size(165, 39);
             label2.TabIndex = 29;
-            label2.Text = "TECLADO MECANICO 60% GLORIOUS\r\n       USB GMMK-COMPACT-BRN";
+            label2.Text = "TARJETA MADRE MICRO ATX \r\nGIGABYTE B560M AORUS ELITE \r\n                  INTEL 1200";
             // 
             // comboBox3
             // 
@@ -365,7 +356,7 @@
             label11.Name = "label11";
             label11.Size = new Size(64, 18);
             label11.TabIndex = 6;
-            label11.Text = "$ 161.00";
+            label11.Text = "$ 166.87";
             // 
             // button4
             // 
@@ -384,15 +375,15 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(13, 206);
+            label12.Location = new Point(0, 201);
             label12.Name = "label12";
-            label12.Size = new Size(148, 60);
+            label12.Size = new Size(182, 60);
             label12.TabIndex = 4;
-            label12.Text = "Diseño único de montaje\r\n de junta: soporte de junta \r\nde silicona con tres capas \r\nde espumas";
+            label12.Text = "Placa base de doble canal \r\nde 128 GB Placa base DDR4-\r\nSDRAM de doble canal de 128 GB\r\nChipset: AMD B550";
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.TECLADO_MECANICO_60_GLORIOUS_USB_GMMK_COMPACT_BRN;
+            pictureBox4.Image = Properties.Resources.TARJETA_MADRE_MICRO_ATX_GIGABYTE_B560M_AORUS_ELITE_INTEL_1200;
             pictureBox4.Location = new Point(10, 10);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(167, 150);
@@ -409,10 +400,10 @@
             panel3.Controls.Add(button3);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(250, 25);
+            panel3.Location = new Point(245, 18);
             panel3.Name = "panel3";
             panel3.Size = new Size(185, 322);
-            panel3.TabIndex = 30;
+            panel3.TabIndex = 36;
             // 
             // label4
             // 
@@ -421,9 +412,9 @@
             label4.ForeColor = Color.FromArgb(0, 80, 200);
             label4.Location = new Point(1, 163);
             label4.Name = "label4";
-            label4.Size = new Size(188, 26);
+            label4.Size = new Size(178, 39);
             label4.TabIndex = 28;
-            label4.Text = "TECLADO MECANICO CORSAIR K60 \r\n          PRO RED CHERRY LED";
+            label4.Text = " TARJETA MADRE MICRO ATX \r\n  BIOSTAR H510MH 2.0 INTEL LGA \r\n                        1200";
             // 
             // comboBox2
             // 
@@ -444,7 +435,7 @@
             label8.Name = "label8";
             label8.Size = new Size(56, 18);
             label8.TabIndex = 6;
-            label8.Text = "$ 89.00";
+            label8.Text = "$ 81.84";
             // 
             // button3
             // 
@@ -463,15 +454,15 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(11, 192);
+            label9.Location = new Point(17, 202);
             label9.Name = "label9";
-            label9.Size = new Size(166, 60);
+            label9.Size = new Size(154, 60);
             label9.TabIndex = 4;
-            label9.Text = "nodized Aluminum Structure: \r\nBrushed aluminum with black\r\n anodization offers a modern\r\n and stylish";
+            label9.Text = "Compatible con procesador\r\n Intel Core LGA 1700 de 12ª\r\n generación Arquitectura de\r\n chip individual Intel Z690";
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.TECLADO_MECANICO_CORSAIR_K60_PRO_RED_CHERRY_LED_CH_910D029_SP;
+            pictureBox3.Image = Properties.Resources.TARJETA_MADRE_MICRO_ATX_BIOSTAR_H510MH_2_0_INTEL_LGA_1200;
             pictureBox3.Location = new Point(10, 10);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(167, 150);
@@ -479,99 +470,18 @@
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
             // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.Control;
-            panel1.Controls.Add(label16);
-            panel1.Controls.Add(comboBox6);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(488, 361);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(185, 322);
-            panel1.TabIndex = 32;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = Color.FromArgb(0, 80, 200);
-            label16.Location = new Point(13, 163);
-            label16.Name = "label16";
-            label16.Size = new Size(156, 26);
-            label16.TabIndex = 35;
-            label16.Text = "MOUSE ASUS USB P511 ROG \r\n            CHAKRAM CORE\r\n";
-            // 
-            // comboBox6
-            // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox6.Location = new Point(13, 292);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(46, 23);
-            comboBox6.TabIndex = 7;
-            comboBox6.Text = "1";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.Blue;
-            label7.Location = new Point(13, 271);
-            label7.Name = "label7";
-            label7.Size = new Size(56, 18);
-            label7.TabIndex = 6;
-            label7.Text = "$ 39.45";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Gold;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(97, 287);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 28);
-            button1.TabIndex = 5;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(10, 206);
-            label10.Name = "label10";
-            label10.Size = new Size(169, 45);
-            label10.TabIndex = 4;
-            label10.Text = "Sensor óptico de 7000 ppp \r\nde grado de juego para un \r\nseguimiento preciso de píxeles";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.MOUSE_RAZER_GAMER_DEATHADDER_V2;
-            pictureBox1.Location = new Point(10, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(167, 150);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
-            // FxTecladoMause
+            // FxPlacasMadres
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
-            ImeMode = ImeMode.On;
-            Name = "FxTecladoMause";
+            Name = "FxPlacasMadres";
             Size = new Size(729, 429);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -588,9 +498,6 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -604,12 +511,14 @@
         private Label label6;
         private PictureBox pictureBox2;
         private Panel panel6;
+        private Label label13;
         private ComboBox comboBox5;
         private Label label17;
         private Button button6;
         private Label label18;
         private PictureBox pictureBox6;
         private Panel panel5;
+        private Label label3;
         private ComboBox comboBox4;
         private Label label14;
         private Button button5;
@@ -629,14 +538,5 @@
         private Button button3;
         private Label label9;
         private PictureBox pictureBox3;
-        private Label label13;
-        private Label label3;
-        private Panel panel1;
-        private Label label16;
-        private ComboBox comboBox6;
-        private Label label7;
-        private Button button1;
-        private Label label10;
-        private PictureBox pictureBox1;
     }
 }

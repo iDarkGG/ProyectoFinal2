@@ -56,13 +56,6 @@
             button4 = new Button();
             label12 = new Label();
             pictureBox4 = new PictureBox();
-            panel5 = new Panel();
-            label13 = new Label();
-            comboBox4 = new ComboBox();
-            label14 = new Label();
-            button5 = new Button();
-            label15 = new Label();
-            pictureBox5 = new PictureBox();
             panel6 = new Panel();
             label16 = new Label();
             comboBox5 = new ComboBox();
@@ -78,8 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
@@ -147,11 +138,11 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(13, 206);
+            label9.Location = new Point(3, 206);
             label9.Name = "label9";
-            label9.Size = new Size(154, 60);
+            label9.Size = new Size(172, 75);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label9.Text = "Multiprocesadores NVIDIA \r\nAmpere Streaming: los bloques\r\n de construcción para las\r\n GPU más rápidas y eficientes \r\ndel mundo";
             // 
             // pictureBox3
             // 
@@ -228,9 +219,9 @@
             label6.AutoSize = true;
             label6.Location = new Point(13, 206);
             label6.Name = "label6";
-            label6.Size = new Size(154, 60);
+            label6.Size = new Size(172, 60);
             label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label6.Text = "Multiprocesadores NVIDIA\r\n Ada Lovelace Streaming: \r\nhasta 2 veces más rendimiento \r\ny eficiencia energética";
             // 
             // pictureBox2
             // 
@@ -307,9 +298,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(13, 206);
             label1.Name = "label1";
-            label1.Size = new Size(154, 60);
+            label1.Size = new Size(157, 60);
             label1.TabIndex = 4;
-            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label1.Text = "Multiprocesadores NVIDIA \r\nAmpere Streaming: el nuevo\r\n Ampere SM ofrece el doble\r\n de rendimiento FP32";
             // 
             // pictureBox1
             // 
@@ -330,7 +321,7 @@
             panel4.Controls.Add(button4);
             panel4.Controls.Add(label12);
             panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(502, 370);
+            panel4.Location = new Point(401, 367);
             panel4.Name = "panel4";
             panel4.Size = new Size(185, 322);
             panel4.TabIndex = 16;
@@ -386,9 +377,9 @@
             label12.AutoSize = true;
             label12.Location = new Point(13, 206);
             label12.Name = "label12";
-            label12.Size = new Size(154, 60);
+            label12.Size = new Size(153, 45);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label12.Text = "Resolución máxima digital: \r\n7680 x 4320.590.4GT/s tasa\r\n de llenado de textura";
             // 
             // pictureBox4
             // 
@@ -400,85 +391,6 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
-            // panel5
-            // 
-            panel5.BackColor = SystemColors.Control;
-            panel5.Controls.Add(label13);
-            panel5.Controls.Add(comboBox4);
-            panel5.Controls.Add(label14);
-            panel5.Controls.Add(button5);
-            panel5.Controls.Add(label15);
-            panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(260, 370);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(185, 322);
-            panel5.TabIndex = 15;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = Color.FromArgb(0, 80, 200);
-            label13.Location = new Point(0, 163);
-            label13.Name = "label13";
-            label13.Size = new Size(182, 26);
-            label13.TabIndex = 8;
-            label13.Text = "ROG Strix GeForce RTX® 4090 OC \r\n            Edition 24GB GDDR6X\r\n";
-            // 
-            // comboBox4
-            // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox4.Location = new Point(13, 292);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(46, 23);
-            comboBox4.TabIndex = 7;
-            comboBox4.Text = "1";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.ForeColor = Color.Blue;
-            label14.Location = new Point(10, 266);
-            label14.Name = "label14";
-            label14.Size = new Size(72, 18);
-            label14.TabIndex = 6;
-            label14.Text = "$ 3624.00";
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.Gold;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.Black;
-            button5.Location = new Point(97, 287);
-            button5.Name = "button5";
-            button5.Size = new Size(80, 28);
-            button5.TabIndex = 5;
-            button5.Text = "Agregar";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(13, 206);
-            label15.Name = "label15";
-            label15.Size = new Size(154, 60);
-            label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.rtx_4090;
-            pictureBox5.Location = new Point(10, 10);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(167, 150);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 3;
-            pictureBox5.TabStop = false;
-            // 
             // panel6
             // 
             panel6.BackColor = SystemColors.Control;
@@ -488,7 +400,7 @@
             panel6.Controls.Add(button6);
             panel6.Controls.Add(label18);
             panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(23, 370);
+            panel6.Location = new Point(134, 367);
             panel6.Name = "panel6";
             panel6.Size = new Size(185, 322);
             panel6.TabIndex = 14;
@@ -542,11 +454,11 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(13, 206);
+            label18.Location = new Point(10, 196);
             label18.Name = "label18";
-            label18.Size = new Size(154, 60);
+            label18.Size = new Size(165, 75);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            label18.Text = "Arquitectura NVIDIA Ampere, \r\nnúcleos para trazado de rayos\r\n de segunda generación, \r\nnúcleos Tensor de tercera \r\ngeneración";
             // 
             // pictureBox6
             // 
@@ -565,13 +477,12 @@
             AutoScroll = true;
             BackColor = Color.White;
             Controls.Add(panel4);
-            Controls.Add(panel5);
             Controls.Add(panel6);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FxTarjetasGraficas";
-            Size = new Size(729, 429);
+            Size = new Size(712, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -584,9 +495,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -623,13 +531,6 @@
         private Button button4;
         private Label label12;
         private PictureBox pictureBox4;
-        private Panel panel5;
-        private Label label13;
-        private ComboBox comboBox4;
-        private Label label14;
-        private Button button5;
-        private Label label15;
-        private PictureBox pictureBox5;
         private Panel panel6;
         private Label label16;
         private ComboBox comboBox5;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
+            label1 = new Label();
             comboBox1 = new ComboBox();
             label5 = new Label();
             button2 = new Button();
@@ -39,30 +40,29 @@
             label17 = new Label();
             button6 = new Button();
             label18 = new Label();
+            label16 = new Label();
             pictureBox6 = new PictureBox();
             panel5 = new Panel();
             comboBox4 = new ComboBox();
             label14 = new Label();
             button5 = new Button();
+            label20 = new Label();
             label15 = new Label();
             pictureBox5 = new PictureBox();
             panel4 = new Panel();
             comboBox3 = new ComboBox();
             label11 = new Label();
+            label2 = new Label();
             button4 = new Button();
             label12 = new Label();
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
             comboBox2 = new ComboBox();
+            label4 = new Label();
             label8 = new Label();
             button3 = new Button();
             label9 = new Label();
             pictureBox3 = new PictureBox();
-            label1 = new Label();
-            label4 = new Label();
-            label2 = new Label();
-            label20 = new Label();
-            label16 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel6.SuspendLayout();
@@ -88,6 +88,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(185, 322);
             panel2.TabIndex = 17;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(0, 80, 200);
+            label1.Location = new Point(0, 163);
+            label1.Name = "label1";
+            label1.Size = new Size(195, 26);
+            label1.TabIndex = 22;
+            label1.Text = "FUENTE DE PODER EAGLE WARRIOR \r\n           EW600 80 PLUZ BRONZE";
             // 
             // comboBox1
             // 
@@ -127,11 +138,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
+            label6.Location = new Point(0, 205);
             label6.Name = "label6";
-            label6.Size = new Size(154, 45);
+            label6.Size = new Size(202, 60);
             label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 200Mb/s";
+            label6.Text = "EVGA 600 BR - \"Fiabilidad de bronce\"\r\nCertificado 80 Plus Bronce con\r\n 85% de eficiencia o superior\r\n bajo cargas típicas";
             // 
             // pictureBox2
             // 
@@ -195,11 +206,22 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(13, 206);
+            label18.Location = new Point(4, 206);
             label18.Name = "label18";
-            label18.Size = new Size(154, 45);
+            label18.Size = new Size(178, 60);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\nSSD M.2  1Ttb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label18.Text = "Topología impulsada por\r\n el rendimiento: el convertidor \r\nresonante LLC de medio puente \r\ny la tecnología DC-DC";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.ForeColor = Color.FromArgb(0, 80, 200);
+            label16.Location = new Point(0, 163);
+            label16.Name = "label16";
+            label16.Size = new Size(197, 26);
+            label16.TabIndex = 26;
+            label16.Text = "FUENTE DE PODER COOLER MASTER \r\n             GOLD V2 FM 550W\r\n";
             // 
             // pictureBox6
             // 
@@ -260,14 +282,25 @@
             button5.Text = "Agregar";
             button5.UseVisualStyleBackColor = false;
             // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label20.ForeColor = Color.FromArgb(0, 80, 200);
+            label20.Location = new Point(11, 163);
+            label20.Name = "label20";
+            label20.Size = new Size(166, 26);
+            label20.TabIndex = 25;
+            label20.Text = "FUENTE DE PODER ASUS ROG  \r\n         STRIX 850W GOLD";
+            // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Location = new Point(13, 206);
             label15.Name = "label15";
-            label15.Size = new Size(154, 45);
+            label15.Size = new Size(155, 45);
             label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\nSSD M2 256Gb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label15.Text = "Los disipadores ROG cubren\r\n componentes críticos. Las \r\ntemperaturas más bajas";
             // 
             // pictureBox5
             // 
@@ -314,6 +347,17 @@
             label11.TabIndex = 6;
             label11.Text = "$ 42.02";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(0, 80, 200);
+            label2.Location = new Point(0, 163);
+            label2.Name = "label2";
+            label2.Size = new Size(190, 26);
+            label2.TabIndex = 24;
+            label2.Text = "FUENTE DE PODER CORSAIR CV450 \r\n                           BRONZE";
+            // 
             // button4
             // 
             button4.BackColor = Color.Gold;
@@ -333,9 +377,9 @@
             label12.AutoSize = true;
             label12.Location = new Point(13, 206);
             label12.Name = "label12";
-            label12.Size = new Size(154, 45);
+            label12.Size = new Size(144, 60);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 100Mb/s\r\n";
+            label12.Text = "Totalmente modular\r\n por lo que solo conecta\r\n los cables que tu sistema \r\nnecesita.";
             // 
             // pictureBox4
             // 
@@ -371,6 +415,17 @@
             comboBox2.TabIndex = 7;
             comboBox2.Text = "1";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(0, 80, 200);
+            label4.Location = new Point(5, 163);
+            label4.Name = "label4";
+            label4.Size = new Size(172, 26);
+            label4.TabIndex = 23;
+            label4.Text = "FUENTE DE PODER EVGA 1600W\r\n                     GP GOLD";
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -401,9 +456,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(13, 206);
             label9.Name = "label9";
-            label9.Size = new Size(154, 45);
+            label9.Size = new Size(163, 45);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\nSSD 1.92Tb velocidad de\r\ndescarga 20Gb/s\r\n";
+            label9.Text = "Certificado 80 Plus Gold, \r\ncon un 90% de eficiencia\r\n o superior bajo cargas típicas";
             // 
             // pictureBox3
             // 
@@ -414,61 +469,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(0, 80, 200);
-            label1.Location = new Point(0, 163);
-            label1.Name = "label1";
-            label1.Size = new Size(195, 26);
-            label1.TabIndex = 22;
-            label1.Text = "FUENTE DE PODER EAGLE WARRIOR \r\n           EW600 80 PLUZ BRONZE";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(0, 80, 200);
-            label4.Location = new Point(5, 163);
-            label4.Name = "label4";
-            label4.Size = new Size(172, 26);
-            label4.TabIndex = 23;
-            label4.Text = "FUENTE DE PODER EVGA 1600W\r\n                     GP GOLD";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(0, 80, 200);
-            label2.Location = new Point(0, 163);
-            label2.Name = "label2";
-            label2.Size = new Size(190, 26);
-            label2.TabIndex = 24;
-            label2.Text = "FUENTE DE PODER CORSAIR CV450 \r\n                           BRONZE";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label20.ForeColor = Color.FromArgb(0, 80, 200);
-            label20.Location = new Point(11, 163);
-            label20.Name = "label20";
-            label20.Size = new Size(166, 26);
-            label20.TabIndex = 25;
-            label20.Text = "FUENTE DE PODER ASUS ROG  \r\n         STRIX 850W GOLD";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = Color.FromArgb(0, 80, 200);
-            label16.Location = new Point(0, 163);
-            label16.Name = "label16";
-            label16.Size = new Size(197, 26);
-            label16.TabIndex = 26;
-            label16.Text = "FUENTE DE PODER COOLER MASTER \r\n             GOLD V2 FM 550W\r\n";
             // 
             // FxFuentesDePoder
             // 
@@ -482,7 +482,7 @@
             Controls.Add(panel4);
             Controls.Add(panel3);
             Name = "FxFuentesDePoder";
-            Size = new Size(746, 429);
+            Size = new Size(729, 429);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
