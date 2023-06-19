@@ -1,4 +1,5 @@
 ﻿using Azure;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -12,8 +13,10 @@ namespace Dependencias.PasswordHandling
 {
     public class Authentication
     {
+        public Uri APIUrl = new Uri("https://localhost:7274/ApiTienda/Users/Admin");
+
         HashCreator passwordhasher = new HashCreator();
-        Regex EmailPattern = new Regex(@"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$");
+        Regex EmailPattern = new Regex("^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$");
 
         //Login Auth
         public bool SintaxVerifier(string string1, string string2)
@@ -28,7 +31,7 @@ namespace Dependencias.PasswordHandling
 
         public bool PasswordChecksum(string password)
         {
-            if(password.Length >= 8)
+            if (password.Length >= 8)
             {
                 return true;
             }
@@ -42,10 +45,10 @@ namespace Dependencias.PasswordHandling
             if (SintaxVerifier(password, confPassword))
             {
                 //Verifies if both Passwords comply to the "not less than 8 digits rule"
-                if(PasswordChecksum(password) & PasswordChecksum(confPassword))
+                if (PasswordChecksum(password) & PasswordChecksum(confPassword))
                 {
                     //Verifies if both passwords are the same
-                    if(password.Equals(confPassword))
+                    if (password.Equals(confPassword))
                     {
                         return true;
                     }
@@ -56,6 +59,7 @@ namespace Dependencias.PasswordHandling
 
         public bool EmailSintaxVerifier(string email)
         {
+            
             if (EmailPattern.IsMatch(email))
             {
                 return true;
@@ -70,10 +74,9 @@ namespace Dependencias.PasswordHandling
 
             try
             {
-                using(HttpClient client = new HttpClient())
+                using (HttpClient client = new HttpClient())
                 {
-                    var APIUrl = new Uri("https://localhost:7274/ApiTienda/Users/Admin");
-                    var Response =  client.GetAsync(APIUrl).Result;
+                    var Response = client.GetAsync(APIUrl).Result;
 
 
                     var output = Response.Content.ReadAsStringAsync().Result;
@@ -87,12 +90,56 @@ namespace Dependencias.PasswordHandling
             }
             catch (Exception)
             {
-                
+                return false;
+
                 throw;
             }
 
-            
 
+
+            return false;
+        }
+
+        //Register Checksums
+
+        public async Task<bool> RegistrationChecksum(string Username, string Email, string Password, string confPassword)
+        {
+            if (SintaxVerifier(Username, Email))
+            {
+                if (EmailSintaxVerifier(Email) & PasswordIsMatch(Password, confPassword))
+                {
+                    //Proceding with User Registration.
+                    using (HttpClient client = new HttpClient())
+                    {
+
+                        try
+                        {
+                            var string2 = JsonSerializer.Serialize(new UserScheme
+                            {
+                                userName = Username,
+                                email = Email,
+                                password = confPassword
+
+                            });
+                            var content = new StringContent(string2, Encoding.UTF8);
+
+                            var Response = client.PostAsync(APIUrl.ToString(), content).Result;
+
+                            if(Response.IsSuccessStatusCode == true)
+                            {
+                                return true;
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Error de respuesta en la API");
+                            throw;
+                        }
+
+                    }
+                }
+
+            }
             return false;
         }
 

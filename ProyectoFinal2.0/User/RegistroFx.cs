@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dependencias.PasswordHandling;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -213,8 +214,20 @@ namespace ProyectoFinal2._0
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            loginForm.Show();
-            this.Close();
+            Authentication auth = new Authentication();
+            if (auth.RegistrationChecksum(txtUsuarioRegistro.Text, txtCorreoRegistro.Text, txtContraseñaRegistro.Text, txtConfirmarContraseña.Text).Result == true)
+            {
+                APPFx MainApp = new APPFx();
+                MainApp.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Hay uno o mas errores en los campos, por favor verifique.", "Error");
+            }
+
+
+
         }
 
         private void btnCerrarLogin_Click(object sender, EventArgs e)

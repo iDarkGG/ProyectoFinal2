@@ -231,7 +231,7 @@ namespace ProyectoFinal2._0
             }
             else
             {
-                MessageBox.Show("ERROR");
+                MessageBox.Show("ERROR EN LOS DATOS \nVERIFIQUE SUS DATOS");
             }
 
         }
@@ -240,25 +240,11 @@ namespace ProyectoFinal2._0
 
         private void btnRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Authentication auth = new Authentication();
-            if (auth.SintaxVerifier(txtUsuario.Text, txtContraseña.Text) & auth.PasswordChecksum(txtContraseña.Text))
-            {
-                if (auth.LogInChechsum(txtUsuario.Text, txtContraseña.Text).Result == true)
-                {
-                    APPFx abrirFormPrincipal = new APPFx();
-                    abrirFormPrincipal.ShowDialog();
-                    this.ShowInTaskbar = false;
-
-                }
-                {
-                    MessageBox.Show("ERROR EN LOS DATOS \nVERIFIQUE SUS DATOS");
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("ERROR");
-            }
+            this.Hide();
+            RegistroFx registro = new RegistroFx();
+            registro.ShowDialog();
+            
+           
 
         }
     }
