@@ -3,19 +3,17 @@ using Dependencias.Model;
 
 namespace API.Repositorio
 {
-    public class ProductRepository : Repository<Product>, IProductRepository
+    public class CarritoRepository : Repository<Carrito>, ICarritoRepository
     {
         private readonly MainContext context;
-        public ProductRepository(MainContext context) : base(context)
+        public CarritoRepository(MainContext context) : base(context)
         {
             this.context = context;
         }
-
-        public async Task Update(Product obj)
+        public async Task Update(Carrito obj)
         {
-            context.Products.Update(obj);
+            context.ShoppingCart.Update(obj);
             await context.SaveChangesAsync();
         }
-
     }
 }

@@ -4,6 +4,6 @@ namespace API.Repositorio
 {
     public interface IUserRepository : IRepository<User>
     {
-        void Update(User obj);
+        Task Update(User obj);
     }
 }

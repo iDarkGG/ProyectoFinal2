@@ -95,15 +95,11 @@ namespace API.Controllers
 
             var usertofind = await context.Get(x => x.UserID == Id);
 
-            if (usertofind is null)
-
-                return NotFound();
-
+            if (usertofind is null) return NotFound();
 
             usertofind = mapper.Map<User>(userP);
 
-
-            await context.GuardarCambios();
+            await context.Update(usertofind);
 
             return Ok();
         }

@@ -15,6 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(ApiMapper));
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddScoped<ICarritoRepository,CarritoRepository>();
 builder.Services.AddDbContext<MainContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));

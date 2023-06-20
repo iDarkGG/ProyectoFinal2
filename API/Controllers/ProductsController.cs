@@ -14,14 +14,12 @@ namespace API.Controllers
     public class ProductsController : Controller
     {
         private readonly IProductRepository context;
-        private readonly ILogger<ProductsController> logger;
         private readonly IMapper mapper;
 
 
-        public ProductsController(IProductRepository context, ILogger<ProductsController> logger, IMapper mapper)
+        public ProductsController(IProductRepository context, IMapper mapper)
         {
             this.context = context;
-            this.logger = logger;
             this.mapper = mapper;
         }
 
@@ -40,21 +38,13 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<ProductDto>> getProductById(int Id)
         {
-            logger.LogInformation("Gets the Product from the specified id");
+            if (Id == 0) return BadRequest();
 
-            if (Id == 0)
-            {
-                logger.LogError($"The product with id {Id} does not exists.");
-                return BadRequest();
-            }
 
             var product = await context.Get(x => x.ProductId == Id);
 
-            if (product is null)
-            {
-                logger.LogError($"Cannot find the Product with id: {Id}.");
-                return NotFound();
-            }
+            if (product is null) return NotFound();
+
 
             return Ok(mapper.Map<ProductDto>(product));
         }
@@ -62,17 +52,14 @@ namespace API.Controllers
         [HttpGet("{Name}", Name = "getProductByName")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<ProductDto>> getProductByName(string Name)
         {
-            logger.LogInformation("Gets the Product from the specified name");
+            if (string.IsNullOrWhiteSpace(Name)) return BadRequest();
 
             var product = await context.Get(x => x.ProductName == Name);
 
-            if (string.IsNullOrWhiteSpace(Name))
-            {
-                logger.LogError($"Cannot find the Product with the name: {Name}.");
-                return NotFound();
-            }
+            if (product is null) return NotFound();
 
             return Ok(product);
         }
@@ -88,17 +75,9 @@ namespace API.Controllers
 
             var ProductToFind = await context.Get(x => x.ProductId == id); 
 
-            if (ProductToFind is null)
-            {
-                logger.LogError($"Cannot find the Product.");
-                return NotFound();
-            }
+            if (ProductToFind is null) return NotFound();
 
-            ProductToFind.ProductDescription = Product.ProductDescription;
-            ProductToFind.ProductPrice = Product.ProductPrice;
-            ProductToFind.ProductStock = Product.ProductStock;
-
-            await context.GuardarCambios();
+            await context.Update(mapper.Map<Product>(Product));
 
             return Ok();
         }
@@ -122,7 +101,7 @@ namespace API.Controllers
             json.ApplyTo(productTemp,ModelState);
 
 
-            context.Update(mapper.Map<Product>(productTemp));
+            await context.Update(mapper.Map<Product>(productTemp));
 
             return NoContent();
         }

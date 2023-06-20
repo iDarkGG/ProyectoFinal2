@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
 
+
 namespace Dependencias.Email
 {
     public class EmailSender
@@ -15,11 +16,11 @@ namespace Dependencias.Email
         public EmailSender(string SendTo)
         {
             destiny = SendTo;
-            html = Directory.GetCurrentDirectory() + "html.txt";
+            html =File.ReadAllText (Directory.GetCurrentDirectory() + @"\html.txt");
             editData();
         }
 
-        public async void SendEmail()
+        public async Task<string> SendEmail()
         {
             MailMessage smg = new(email, destiny, "Factura Tienda Perrona", html);
             smg.IsBodyHtml = true;
@@ -32,27 +33,30 @@ namespace Dependencias.Email
                 smtp.Credentials = new NetworkCredential(email, pass);
 
                 await smtp.SendMailAsync(smg);
+                smtp.Dispose();
+                return "so"; 
             }
         }
 
-        public void fillRows(IEnumerable<Product> products)
+        public void fillRows(IEnumerable<Carrito> products)
         {
             var strToInsert = "";
             foreach (var product in products)
             {
                 strToInsert += @$"<tr>
-                        < td >< span contenteditable>{product.ProductName}</ span ></ td >
-                        < td >< span contenteditable> {product.ProductDescription} </ span ></ td >
-                        < td >< span data - prefix >$</ span >< span contenteditable > {product.ProductPrice} </ span ></ td >
-                        < td >< span contenteditable > {product.ProductStock} </ span ></ td >
-                        < td >< span data - prefix >$</ span >< span > {product.ProductPrice * product.ProductStock} </ span ></ td >
-                             </tr >";
+						<td><span contenteditable>{product.ProductName}</span></td>
+						<td><span contenteditable>{product.ProductDescription}</span></td>
+						<td><span data-prefix>$</span><span contenteditable>{product.ProductPrice}</span></td>
+						<td><span contenteditable>{product.Quantity}</span></td>
+						<td><span data-prefix>$</span><span>{product.Quantity * product.ProductPrice}</span></td>
+					</tr>";
+
             }
 
-
-            strToInsert += "\n<meta name=\"editar aqui\">";
-
             html = Regex.Replace(html, "<meta name=\"editar aqui\">", strToInsert);
+            
+            strToInsert = @$"<td><span data-prefix>$</span><span>{products.Sum(x => x.Quantity * x.ProductPrice)}</span></td>";
+            html = Regex.Replace(html, "<meta name=\"editar final\">", strToInsert);
         }
 
         public void fillHeader(User usertoSend)
@@ -90,6 +94,8 @@ namespace Dependencias.Email
 
             html = Regex.Replace(html, "<meta name=\"editar datos\">", strToInsert);
         }
+
+
 
     }
 }

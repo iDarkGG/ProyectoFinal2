@@ -6,21 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dependencias.Model
+namespace API.Dtos
 {
-    public class Carrito
+    public class CarritoDto
     {
-        [Key]
         public string ProductName { get; set; } = null!;
-
         public string ProductDescription { get; set; } = null!;
-
-        [Column(TypeName = "decimal(6,2)")]
         public decimal ProductPrice { get; set; }
-
         public int Quantity { get; set; }
-
-        [Column(TypeName = "decimal(16,2)")]
         public decimal Total { get; set; }
     }
 }

@@ -13,6 +13,8 @@ namespace API.Mapper
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<User, UserPostDto>().ReverseMap();
             CreateMap<User, UserUpdateDto>().ReverseMap();
+            CreateMap<Carrito, CarritoDto>().ReverseMap();
+            CreateMap<Carrito, CarritoPostDto>().ReverseMap();
         }
     }
 }
