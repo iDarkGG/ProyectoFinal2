@@ -146,6 +146,7 @@
             // 
             // button3
             // 
+
             this.button3.BackColor = System.Drawing.Color.Gold;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -687,7 +688,6 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

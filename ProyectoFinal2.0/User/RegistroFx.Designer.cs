@@ -28,76 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelContenedorRegistroFx = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtConfirmarContraseña = new System.Windows.Forms.TextBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.txtCorreoRegistro = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnRegistro = new System.Windows.Forms.Button();
-            this.txtContraseñaRegistro = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtUsuarioRegistro = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCerrarLogin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelContenedorRegistroFx.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            panelContenedorRegistroFx = new Panel();
+            panel1 = new Panel();
+            txtConfirmarContraseña = new TextBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            txtCorreoRegistro = new TextBox();
+            linkLabel1 = new LinkLabel();
+            btnRegistro = new Button();
+            txtContraseñaRegistro = new TextBox();
+            pictureBox5 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            txtUsuarioRegistro = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            btnCerrarLogin = new Button();
+            pictureBox10 = new PictureBox();
+            panelContenedorRegistroFx.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            SuspendLayout();
             // 
             // panelContenedorRegistroFx
             // 
-            this.panelContenedorRegistroFx.Controls.Add(this.panel1);
-            this.panelContenedorRegistroFx.Controls.Add(this.pictureBox1);
-            this.panelContenedorRegistroFx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedorRegistroFx.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedorRegistroFx.Name = "panelContenedorRegistroFx";
-            this.panelContenedorRegistroFx.Size = new System.Drawing.Size(706, 380);
-            this.panelContenedorRegistroFx.TabIndex = 0;
+            panelContenedorRegistroFx.BackColor = Color.FromArgb(123, 41, 210);
+            panelContenedorRegistroFx.Controls.Add(pictureBox10);
+            panelContenedorRegistroFx.Controls.Add(panel1);
+            panelContenedorRegistroFx.Dock = DockStyle.Fill;
+            panelContenedorRegistroFx.Location = new Point(0, 0);
+            panelContenedorRegistroFx.Name = "panelContenedorRegistroFx";
+            panelContenedorRegistroFx.Size = new Size(706, 380);
+            panelContenedorRegistroFx.TabIndex = 0;
+            panelContenedorRegistroFx.Paint += panelContenedorRegistroFx_Paint;
+            panelContenedorRegistroFx.MouseDown += panelContenedorRegistroFx_MouseDown;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtConfirmarContraseña);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.txtCorreoRegistro);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.btnRegistro);
-            this.panel1.Controls.Add(this.txtContraseñaRegistro);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.txtUsuarioRegistro);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnCerrarLogin);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(412, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 380);
-            this.panel1.TabIndex = 2;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(txtConfirmarContraseña);
+            panel1.Controls.Add(pictureBox8);
+            panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(pictureBox6);
+            panel1.Controls.Add(pictureBox7);
+            panel1.Controls.Add(txtCorreoRegistro);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(btnRegistro);
+            panel1.Controls.Add(txtContraseñaRegistro);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(txtUsuarioRegistro);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btnCerrarLogin);
+            panel1.Cursor = Cursors.Hand;
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(412, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(294, 380);
+            panel1.TabIndex = 2;
             // 
             // txtConfirmarContraseña
             // 
@@ -292,46 +296,48 @@
             this.btnCerrarLogin.UseVisualStyleBackColor = true;
             this.btnCerrarLogin.Click += new System.EventHandler(this.btnCerrarLogin_Click);
             // 
-            // pictureBox1
+            // pictureBox10
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::ProyectoFinal2._0.Properties.Resources._7534314_3665792;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(495, 380);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox10.Image = Properties.Resources.Recurso_7;
+            pictureBox10.Location = new Point(12, 64);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(386, 246);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 3;
+            pictureBox10.TabStop = false;
             // 
             // RegistroFx
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 380);
-            this.Controls.Add(this.panelContenedorRegistroFx);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RegistroFx";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panelContenedorRegistroFx.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(706, 380);
+            Controls.Add(panelContenedorRegistroFx);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "RegistroFx";
+            StartPosition = FormStartPosition.CenterScreen;
+            Activated += RegistroFx_Activated;
+            ResizeEnd += RegistroFx_ResizeEnd;
+            SizeChanged += RegistroFx_SizeChanged;
+            Paint += RegistroFx_Paint;
+            MouseDown += RegistroFx_MouseDown;
+            panelContenedorRegistroFx.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panelContenedorRegistroFx;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private TextBox txtConfirmarContraseña;
         private PictureBox pictureBox8;
@@ -351,5 +357,6 @@
         private Label label2;
         private Label label1;
         private Button btnCerrarLogin;
+        private PictureBox pictureBox10;
     }
 }

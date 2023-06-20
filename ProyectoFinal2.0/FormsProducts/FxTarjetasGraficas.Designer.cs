@@ -134,6 +134,7 @@
             button3.TabIndex = 5;
             button3.Text = "Agregar";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label9
             // 
@@ -213,6 +214,7 @@
             button2.TabIndex = 5;
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label6
             // 
@@ -292,6 +294,7 @@
             button1.TabIndex = 5;
             button1.Text = "Agregar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -371,6 +374,7 @@
             button4.TabIndex = 5;
             button4.Text = "Agregar";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label12
             // 
@@ -450,6 +454,7 @@
             button6.TabIndex = 5;
             button6.Text = "Agregar";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label18
             // 
@@ -482,7 +487,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FxTarjetasGraficas";
-            Size = new Size(712, 429);
+            Size = new Size(746, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

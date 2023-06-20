@@ -20,6 +20,7 @@ namespace ProyectoFinal2._0.FormsProducts
         {
         }
 
+
         private async void button1_Click(object sender, EventArgs e)
         {
             var txt = sender as Button;
@@ -56,6 +57,7 @@ namespace ProyectoFinal2._0.FormsProducts
             }
 
             
-        }
+
+       
     }
 }
