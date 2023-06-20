@@ -28,128 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            txtCodigoDeSeguridad = new TextBox();
-            label4 = new Label();
-            txtExpiracion = new TextBox();
-            label3 = new Label();
-            txtNumeroTarjeta = new TextBox();
-            label2 = new Label();
-            txtNombreTitular = new TextBox();
-            label1 = new Label();
-            btnValidarTarjeta = new Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCodigoDeSeguridad = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtExpiracion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNumeroTarjeta = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNombreTitular = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnValidarTarjeta = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(txtCodigoDeSeguridad);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(txtExpiracion);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(txtNumeroTarjeta);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(txtNombreTitular);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(18, 26);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(464, 183);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtCodigoDeSeguridad);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtExpiracion);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtNumeroTarjeta);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtNombreTitular);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(18, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 183);
+            this.panel1.TabIndex = 0;
             // 
             // txtCodigoDeSeguridad
             // 
-            txtCodigoDeSeguridad.Location = new Point(316, 46);
-            txtCodigoDeSeguridad.Name = "txtCodigoDeSeguridad";
-            txtCodigoDeSeguridad.Size = new Size(117, 23);
-            txtCodigoDeSeguridad.TabIndex = 16;
+            this.txtCodigoDeSeguridad.Location = new System.Drawing.Point(316, 46);
+            this.txtCodigoDeSeguridad.Name = "txtCodigoDeSeguridad";
+            this.txtCodigoDeSeguridad.Size = new System.Drawing.Size(117, 23);
+            this.txtCodigoDeSeguridad.TabIndex = 16;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(330, 28);
-            label4.Name = "label4";
-            label4.Size = new Size(91, 15);
-            label4.TabIndex = 15;
-            label4.Text = "C. de seguridad";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(330, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "C. de seguridad";
             // 
             // txtExpiracion
             // 
-            txtExpiracion.Location = new Point(316, 123);
-            txtExpiracion.Name = "txtExpiracion";
-            txtExpiracion.Size = new Size(110, 23);
-            txtExpiracion.TabIndex = 14;
+            this.txtExpiracion.Location = new System.Drawing.Point(316, 123);
+            this.txtExpiracion.Name = "txtExpiracion";
+            this.txtExpiracion.Size = new System.Drawing.Size(110, 23);
+            this.txtExpiracion.TabIndex = 14;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(316, 90);
-            label3.Name = "label3";
-            label3.Size = new Size(117, 15);
-            label3.TabIndex = 13;
-            label3.Text = "Expiracion (mm/yy )";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(316, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 15);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Expiracion (mm/yy )";
             // 
             // txtNumeroTarjeta
             // 
-            txtNumeroTarjeta.Location = new Point(12, 123);
-            txtNumeroTarjeta.Name = "txtNumeroTarjeta";
-            txtNumeroTarjeta.Size = new Size(266, 23);
-            txtNumeroTarjeta.TabIndex = 12;
+            this.txtNumeroTarjeta.Location = new System.Drawing.Point(12, 123);
+            this.txtNumeroTarjeta.Name = "txtNumeroTarjeta";
+            this.txtNumeroTarjeta.Size = new System.Drawing.Size(266, 23);
+            this.txtNumeroTarjeta.TabIndex = 12;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(12, 105);
-            label2.Name = "label2";
-            label2.Size = new Size(122, 15);
-            label2.TabIndex = 11;
-            label2.Text = "Numero de la tarjeta";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Numero de la tarjeta";
             // 
             // txtNombreTitular
             // 
-            txtNombreTitular.Location = new Point(12, 46);
-            txtNombreTitular.Name = "txtNombreTitular";
-            txtNombreTitular.Size = new Size(266, 23);
-            txtNombreTitular.TabIndex = 10;
+            this.txtNombreTitular.Location = new System.Drawing.Point(12, 46);
+            this.txtNombreTitular.Name = "txtNombreTitular";
+            this.txtNombreTitular.Size = new System.Drawing.Size(266, 23);
+            this.txtNombreTitular.TabIndex = 10;
+            this.txtNombreTitular.TextChanged += new System.EventHandler(this.txtNombreTitular_TextChanged);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(12, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 15);
-            label1.TabIndex = 9;
-            label1.Text = "Nombre del titular";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Nombre del titular";
             // 
             // btnValidarTarjeta
             // 
-            btnValidarTarjeta.BackColor = Color.FromArgb(123, 41, 210);
-            btnValidarTarjeta.FlatAppearance.BorderSize = 0;
-            btnValidarTarjeta.FlatStyle = FlatStyle.Flat;
-            btnValidarTarjeta.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnValidarTarjeta.ForeColor = Color.White;
-            btnValidarTarjeta.Location = new Point(328, 234);
-            btnValidarTarjeta.Name = "btnValidarTarjeta";
-            btnValidarTarjeta.Size = new Size(154, 34);
-            btnValidarTarjeta.TabIndex = 7;
-            btnValidarTarjeta.Text = "Validar";
-            btnValidarTarjeta.UseVisualStyleBackColor = false;
+            this.btnValidarTarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(41)))), ((int)(((byte)(210)))));
+            this.btnValidarTarjeta.FlatAppearance.BorderSize = 0;
+            this.btnValidarTarjeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnValidarTarjeta.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnValidarTarjeta.ForeColor = System.Drawing.Color.White;
+            this.btnValidarTarjeta.Location = new System.Drawing.Point(328, 234);
+            this.btnValidarTarjeta.Name = "btnValidarTarjeta";
+            this.btnValidarTarjeta.Size = new System.Drawing.Size(154, 34);
+            this.btnValidarTarjeta.TabIndex = 7;
+            this.btnValidarTarjeta.Text = "Validar";
+            this.btnValidarTarjeta.UseVisualStyleBackColor = false;
+            this.btnValidarTarjeta.Click += new System.EventHandler(this.btnValidarTarjeta_Click);
             // 
             // FxFormaTarjeta
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnValidarTarjeta);
-            Controls.Add(panel1);
-            Name = "FxFormaTarjeta";
-            Size = new Size(508, 296);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnValidarTarjeta);
+            this.Controls.Add(this.panel1);
+            this.Name = "FxFormaTarjeta";
+            this.Size = new System.Drawing.Size(508, 296);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

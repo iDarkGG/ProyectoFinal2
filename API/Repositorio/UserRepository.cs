@@ -11,9 +11,10 @@ namespace API.Repositorio
             this.context = context;
         }
 
-        public void Update(User obj)
+        public async Task Update(User obj)
         {
-            context.Update(obj);
+            context.Users.Update(obj);
+            await context.SaveChangesAsync();
         }
     }
 }

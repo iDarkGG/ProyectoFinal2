@@ -263,6 +263,26 @@ namespace ProyectoFinal2._0.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image__10_ {
+            get {
+                object obj = ResourceManager.GetObject("image (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image__11_ {
+            get {
+                object obj = ResourceManager.GetObject("image (11)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image__2_ {
             get {
                 object obj = ResourceManager.GetObject("image (2)", resourceCulture);
@@ -623,6 +643,36 @@ namespace ProyectoFinal2._0.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Recurso_5 {
+            get {
+                object obj = ResourceManager.GetObject("Recurso 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recurso_7 {
+            get {
+                object obj = ResourceManager.GetObject("Recurso 7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recurso_8 {
+            get {
+                object obj = ResourceManager.GetObject("Recurso 8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rtx_3070ti {
             get {
                 object obj = ResourceManager.GetObject("rtx 3070ti", resourceCulture);
@@ -766,6 +816,56 @@ namespace ProyectoFinal2._0.Properties {
         internal static System.Drawing.Bitmap TARJETA_DE_VIDEO_INNOVISION_GEFORCE_RTX3050_TWIN_X2_OC_8GB {
             get {
                 object obj = ResourceManager.GetObject("TARJETA DE VIDEO INNOVISION GEFORCE RTX3050 TWIN X2 OC 8GB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TARJETA_MADRE_ATX_ASUS_PRIME_Z690_P_WIFI_INTEL_LGA_1700_12GEN {
+            get {
+                object obj = ResourceManager.GetObject("TARJETA MADRE ATX ASUS PRIME Z690-P WIFI INTEL LGA 1700 12GEN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TARJETA_MADRE_MICRO_ATX_BIOSTAR_H510MH_2_0_INTEL_LGA_1200 {
+            get {
+                object obj = ResourceManager.GetObject("TARJETA MADRE MICRO ATX BIOSTAR H510MH 2.0 INTEL LGA 1200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TARJETA_MADRE_MICRO_ATX_GIGABYTE_B560M_AORUS_ELITE_INTEL_1200 {
+            get {
+                object obj = ResourceManager.GetObject("TARJETA MADRE MICRO ATX GIGABYTE B560M AORUS ELITE INTEL 1200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TARJETA_MADRE_MICRO_ATX_GIGABYTE_B660M_DS3H_DDR4_INTEL_LGA_1700_12VA_GEN {
+            get {
+                object obj = ResourceManager.GetObject("TARJETA MADRE MICRO ATX GIGABYTE B660M DS3H DDR4 INTEL LGA 1700 12VA GEN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TARJETA_MADRE_MICRO_ATX_GIGABYTE_H610M_H_D4_INTEL_LGA_1700_12VA_GEN {
+            get {
+                object obj = ResourceManager.GetObject("TARJETA MADRE MICRO ATX GIGABYTE H610M H D4 INTEL LGA 1700 12VA GEN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

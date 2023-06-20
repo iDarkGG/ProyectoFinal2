@@ -94,5 +94,12 @@ namespace ProyectoFinal2._0
         {
             carritoFx2.BringToFront();
         }
+
+        private void btnPlacasMadre_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnPlacasMadre.Height;
+            SidePanel.Top = btnPlacasMadre.Top;
+            fxPlacasMadres1.BringToFront();
+        }
     }
 }

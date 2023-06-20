@@ -21,6 +21,29 @@ namespace Dependencias.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Dependencias.Model.Carrito", b =>
+                {
+                    b.Property<string>("ProductName")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProductDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("ProductPrice")
+                        .HasColumnType("decimal(6,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(16,2)");
+
+                    b.HasKey("ProductName");
+
+                    b.ToTable("ShoppingCart");
+                });
+
             modelBuilder.Entity("Dependencias.Model.Product", b =>
                 {
                     b.Property<int>("ProductId")

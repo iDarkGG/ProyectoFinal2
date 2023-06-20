@@ -16,5 +16,16 @@ namespace ProyectoFinal2._0.FormsProducts
         {
             InitializeComponent();
         }
+
+
+        private void FxFuentesDePoder_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

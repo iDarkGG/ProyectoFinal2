@@ -11,7 +11,11 @@ namespace API.Repositorio
             this.context = context;
         }
 
-        public void Update(Product obj) => context.Update(obj);
-        
+        public async Task Update(Product obj)
+        {
+            context.Products.Update(obj);
+            await context.SaveChangesAsync();
+        }
+
     }
 }

@@ -28,571 +28,667 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel3 = new Panel();
-            label7 = new Label();
-            comboBox2 = new ComboBox();
-            label8 = new Label();
-            button3 = new Button();
-            label9 = new Label();
-            pictureBox3 = new PictureBox();
-            panel2 = new Panel();
-            label4 = new Label();
-            comboBox1 = new ComboBox();
-            label5 = new Label();
-            button2 = new Button();
-            label6 = new Label();
-            pictureBox2 = new PictureBox();
-            panel1 = new Panel();
-            label2 = new Label();
-            cboProcesador1 = new ComboBox();
-            label3 = new Label();
-            button1 = new Button();
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            panel4 = new Panel();
-            label10 = new Label();
-            comboBox3 = new ComboBox();
-            label11 = new Label();
-            button4 = new Button();
-            label12 = new Label();
-            pictureBox4 = new PictureBox();
-            panel5 = new Panel();
-            label13 = new Label();
-            comboBox4 = new ComboBox();
-            label14 = new Label();
-            button5 = new Button();
-            label15 = new Label();
-            pictureBox5 = new PictureBox();
-            panel6 = new Panel();
-            label16 = new Label();
-            comboBox5 = new ComboBox();
-            label17 = new Label();
-            button6 = new Button();
-            label18 = new Label();
-            pictureBox6 = new PictureBox();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboProcesador1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel3
             // 
-            panel3.BackColor = SystemColors.Control;
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(comboBox2);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(499, 15);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(185, 322);
-            panel3.TabIndex = 13;
-            panel3.Paint += panel3_Paint;
+            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Location = new System.Drawing.Point(499, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(185, 322);
+            this.panel3.TabIndex = 13;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.FromArgb(0, 80, 200);
-            label7.Location = new Point(10, 163);
-            label7.Name = "label7";
-            label7.Size = new Size(173, 26);
-            label7.TabIndex = 8;
-            label7.Text = "CASE MASTERCASE H1000 ARGB \r\n         MCM-H100-KANN-S01\r\n";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label7.Location = new System.Drawing.Point(10, 163);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(173, 26);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "CASE MASTERCASE H1000 ARGB \r\n         MCM-H100-KANN-S01\r\n";
             // 
             // comboBox2
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox2.Location = new Point(13, 292);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(46, 23);
-            comboBox2.TabIndex = 7;
-            comboBox2.Text = "1";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.comboBox2.Location = new System.Drawing.Point(13, 292);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(46, 23);
+            this.comboBox2.TabIndex = 7;
+            this.comboBox2.Text = "1";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.Blue;
-            label8.Location = new Point(10, 266);
-            label8.Name = "label8";
-            label8.Size = new Size(60, 18);
-            label8.TabIndex = 6;
-            label8.Text = "$  42.70";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Blue;
+            this.label8.Location = new System.Drawing.Point(10, 266);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 18);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "$  42.70";
             // 
             // button3
             // 
-            button3.BackColor = Color.Gold;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.Black;
-            button3.Location = new Point(97, 287);
-            button3.Name = "button3";
-            button3.Size = new Size(80, 28);
-            button3.TabIndex = 5;
-            button3.Text = "Agregar";
-            button3.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.Gold;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(97, 287);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 28);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Agregar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(13, 206);
-            label9.Name = "label9";
-            label9.Size = new Size(154, 60);
-            label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(13, 206);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 60);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Three included addressable \r\nRGB fans flood the build \r\nwith lighting while provi" +
+    "ding \r\nconsiderable airflow.";
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.pngegg__2_;
-            pictureBox3.Location = new Point(10, 10);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(167, 150);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.Control;
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(comboBox1);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(257, 15);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(185, 322);
-            panel2.TabIndex = 12;
-            panel2.Paint += panel2_Paint;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Location = new System.Drawing.Point(257, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(185, 322);
+            this.panel2.TabIndex = 12;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(0, 80, 200);
-            label4.Location = new Point(10, 163);
-            label4.Name = "label4";
-            label4.Size = new Size(166, 26);
-            label4.TabIndex = 8;
-            label4.Text = "CASE GAMER EAGLE WARRIOR \r\n            GLADIATOR CG11\r\n";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label4.Location = new System.Drawing.Point(10, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(166, 26);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "CASE GAMER EAGLE WARRIOR \r\n            GLADIATOR CG11\r\n";
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox1.Location = new Point(13, 292);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(46, 23);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "1";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.comboBox1.Location = new System.Drawing.Point(13, 292);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(46, 23);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Text = "1";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Blue;
-            label5.Location = new Point(10, 266);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 18);
-            label5.TabIndex = 6;
-            label5.Text = "$ 55.25";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(10, 266);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 18);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "$ 55.25";
             // 
             // button2
             // 
-            button2.BackColor = Color.Gold;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(97, 287);
-            button2.Name = "button2";
-            button2.Size = new Size(80, 28);
-            button2.TabIndex = 5;
-            button2.Text = "Agregar";
-            button2.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(97, 287);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 28);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Agregar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 60);
-            label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 206);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 60);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "tipo de caja ATX Full Tower\r\nCristal templado frontal\r\n + aluminio Cristal \r\ntemp" +
+    "lado lateral";
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.pngegg__1_;
-            pictureBox2.Location = new Point(10, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(167, 150);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.Control;
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(cboProcesador1);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(20, 15);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(185, 322);
-            panel1.TabIndex = 11;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.cboProcesador1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(20, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 322);
+            this.panel1.TabIndex = 11;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(0, 80, 200);
-            label2.Location = new Point(0, 163);
-            label2.Name = "label2";
-            label2.Size = new Size(184, 26);
-            label2.TabIndex = 9;
-            label2.Text = "CASE CAMER ADATA XPG INVADER-\r\n                         BLACK";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label2.Location = new System.Drawing.Point(0, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(184, 26);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "CASE CAMER ADATA XPG INVADER-\r\n                         BLACK";
             // 
             // cboProcesador1
             // 
-            cboProcesador1.FormattingEnabled = true;
-            cboProcesador1.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            cboProcesador1.Location = new Point(13, 292);
-            cboProcesador1.Name = "cboProcesador1";
-            cboProcesador1.Size = new Size(46, 23);
-            cboProcesador1.TabIndex = 7;
-            cboProcesador1.Text = "1";
+            this.cboProcesador1.FormattingEnabled = true;
+            this.cboProcesador1.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cboProcesador1.Location = new System.Drawing.Point(13, 292);
+            this.cboProcesador1.Name = "cboProcesador1";
+            this.cboProcesador1.Size = new System.Drawing.Size(46, 23);
+            this.cboProcesador1.TabIndex = 7;
+            this.cboProcesador1.Text = "1";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Blue;
-            label3.Location = new Point(13, 271);
-            label3.Name = "label3";
-            label3.Size = new Size(56, 18);
-            label3.TabIndex = 6;
-            label3.Text = "$ 59.95";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(13, 271);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "$ 59.95";
             // 
             // button1
             // 
-            button1.BackColor = Color.Gold;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(97, 287);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 28);
-            button1.TabIndex = 5;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(97, 287);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 28);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 206);
-            label1.Name = "label1";
-            label1.Size = new Size(154, 60);
-            label1.TabIndex = 4;
-            label1.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 206);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 60);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Vistas panorámicas: \r\nsin pilar de esquina. El Y60 \r\ncuenta con un diseño\r\n de vi" +
+    "drio templado";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.pngegg;
-            pictureBox1.Location = new Point(10, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(167, 150);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
-            panel4.BackColor = SystemColors.Control;
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(comboBox3);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(button4);
-            panel4.Controls.Add(label12);
-            panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(499, 368);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(185, 322);
-            panel4.TabIndex = 16;
+            this.panel4.BackColor = System.Drawing.SystemColors.Control;
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.comboBox3);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Location = new System.Drawing.Point(499, 368);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(185, 322);
+            this.panel4.TabIndex = 16;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.FromArgb(0, 80, 200);
-            label10.Location = new Point(27, 163);
-            label10.Name = "label10";
-            label10.Size = new Size(140, 26);
-            label10.TabIndex = 8;
-            label10.Text = "CASE GAMER MPG VELOX \r\n                100R MSI\r\n";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label10.Location = new System.Drawing.Point(27, 163);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 26);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "CASE GAMER MPG VELOX \r\n                100R MSI\r\n";
             // 
             // comboBox3
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox3.Location = new Point(13, 292);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(46, 23);
-            comboBox3.TabIndex = 7;
-            comboBox3.Text = "1";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.comboBox3.Location = new System.Drawing.Point(13, 292);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(46, 23);
+            this.comboBox3.TabIndex = 7;
+            this.comboBox3.Text = "1";
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.Blue;
-            label11.Location = new Point(10, 266);
-            label11.Name = "label11";
-            label11.Size = new Size(68, 18);
-            label11.TabIndex = 6;
-            label11.Text = "$  175.50";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Blue;
+            this.label11.Location = new System.Drawing.Point(10, 266);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 18);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "$  175.50";
             // 
             // button4
             // 
-            button4.BackColor = Color.Gold;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(97, 287);
-            button4.Name = "button4";
-            button4.Size = new Size(80, 28);
-            button4.TabIndex = 5;
-            button4.Text = "Agregar";
-            button4.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.Gold;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(97, 287);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 28);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Agregar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(13, 206);
-            label12.Name = "label12";
-            label12.Size = new Size(154, 60);
-            label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(0, 206);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(191, 45);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "La malla poligonal cuenta\r\n con un contorno tridimensional \r\ny también es capaz d" +
+    "e proporciona";
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.pngegg__5_;
-            pictureBox4.Location = new Point(10, 10);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(167, 150);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg__5_;
+            this.pictureBox4.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
-            panel5.BackColor = SystemColors.Control;
-            panel5.Controls.Add(label13);
-            panel5.Controls.Add(comboBox4);
-            panel5.Controls.Add(label14);
-            panel5.Controls.Add(button5);
-            panel5.Controls.Add(label15);
-            panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(257, 368);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(185, 322);
-            panel5.TabIndex = 15;
+            this.panel5.BackColor = System.Drawing.SystemColors.Control;
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.comboBox4);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Location = new System.Drawing.Point(257, 368);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(185, 322);
+            this.panel5.TabIndex = 15;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = Color.FromArgb(0, 80, 200);
-            label13.Location = new Point(0, 163);
-            label13.Name = "label13";
-            label13.Size = new Size(195, 26);
-            label13.TabIndex = 8;
-            label13.Text = "CASE COOLER MASTER MB511 ARGB \r\n              MCB-B511D-KGNN-\r\n";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label13.Location = new System.Drawing.Point(0, 163);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(195, 26);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "CASE COOLER MASTER MB511 ARGB \r\n              MCB-B511D-KGNN-\r\n";
             // 
             // comboBox4
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox4.Location = new Point(13, 292);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(46, 23);
-            comboBox4.TabIndex = 7;
-            comboBox4.Text = "1";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.comboBox4.Location = new System.Drawing.Point(13, 292);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(46, 23);
+            this.comboBox4.TabIndex = 7;
+            this.comboBox4.Text = "1";
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.ForeColor = Color.Blue;
-            label14.Location = new Point(10, 266);
-            label14.Name = "label14";
-            label14.Size = new Size(64, 18);
-            label14.TabIndex = 6;
-            label14.Text = "$ 125.00";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.Blue;
+            this.label14.Location = new System.Drawing.Point(10, 266);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 18);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "$ 125.00";
             // 
             // button5
             // 
-            button5.BackColor = Color.Gold;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.Black;
-            button5.Location = new Point(97, 287);
-            button5.Name = "button5";
-            button5.Size = new Size(80, 28);
-            button5.TabIndex = 5;
-            button5.Text = "Agregar";
-            button5.UseVisualStyleBackColor = false;
+            this.button5.BackColor = System.Drawing.Color.Gold;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(97, 287);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 28);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Agregar";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(13, 206);
-            label15.Name = "label15";
-            label15.Size = new Size(154, 60);
-            label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 206);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(154, 60);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Panel frontal de malla\r\nConsumo de rendimiento\r\nVentiladores LED RGB\r\nControl de " +
+    "iluminación RGB";
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.pngegg__4_;
-            pictureBox5.Location = new Point(10, 10);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(167, 150);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 3;
-            pictureBox5.TabStop = false;
+            this.pictureBox5.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg__4_;
+            this.pictureBox5.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // panel6
             // 
-            panel6.BackColor = SystemColors.Control;
-            panel6.Controls.Add(label16);
-            panel6.Controls.Add(comboBox5);
-            panel6.Controls.Add(label17);
-            panel6.Controls.Add(button6);
-            panel6.Controls.Add(label18);
-            panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(20, 368);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(185, 322);
-            panel6.TabIndex = 14;
+            this.panel6.BackColor = System.Drawing.SystemColors.Control;
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Controls.Add(this.comboBox5);
+            this.panel6.Controls.Add(this.label17);
+            this.panel6.Controls.Add(this.button6);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Location = new System.Drawing.Point(20, 368);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(185, 322);
+            this.panel6.TabIndex = 14;
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = Color.FromArgb(0, 80, 200);
-            label16.Location = new Point(19, 163);
-            label16.Name = "label16";
-            label16.Size = new Size(148, 26);
-            label16.TabIndex = 9;
-            label16.Text = "CASE GAMER TG5 PRO RGB \r\n             SHARKOON\r\n";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.label16.Location = new System.Drawing.Point(19, 163);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(148, 26);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "CASE GAMER TG5 PRO RGB \r\n             SHARKOON\r\n";
             // 
             // comboBox5
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox5.Location = new Point(13, 292);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(46, 23);
-            comboBox5.TabIndex = 7;
-            comboBox5.Text = "1";
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.comboBox5.Location = new System.Drawing.Point(13, 292);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(46, 23);
+            this.comboBox5.TabIndex = 7;
+            this.comboBox5.Text = "1";
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.ForeColor = Color.Blue;
-            label17.Location = new Point(13, 271);
-            label17.Name = "label17";
-            label17.Size = new Size(64, 18);
-            label17.TabIndex = 6;
-            label17.Text = "$ 121.35";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.Blue;
+            this.label17.Location = new System.Drawing.Point(13, 271);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 18);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "$ 121.35";
             // 
             // button6
             // 
-            button6.BackColor = Color.Gold;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.Black;
-            button6.Location = new Point(97, 287);
-            button6.Name = "button6";
-            button6.Size = new Size(80, 28);
-            button6.TabIndex = 5;
-            button6.Text = "Agregar";
-            button6.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.Gold;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Location = new System.Drawing.Point(97, 287);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 28);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Agregar";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // label18
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(13, 206);
-            label18.Name = "label18";
-            label18.Size = new Size(154, 60);
-            label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\n6 núcleos/12 hilos. \r\nHasta 4. 3 GHz. Socket \r\ntipo LGA 1200 \r\n";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(13, 206);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(151, 60);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Fuerte flujo de aire. El TG6 \r\nRGB tiene tres ventiladores\r\n RGB preinstalados de" +
+    " 4.724\r\n in direccionables";
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.pngegg__3_;
-            pictureBox6.Location = new Point(10, 10);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(167, 150);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
+            this.pictureBox6.Image = global::ProyectoFinal2._0.Properties.Resources.pngegg__3_;
+            this.pictureBox6.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(167, 150);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
             // 
             // FxCase
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            BackColor = Color.White;
-            Controls.Add(panel4);
-            Controls.Add(panel5);
-            Controls.Add(panel6);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Name = "FxCase";
-            Size = new Size(746, 429);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Name = "FxCase";
+            this.Size = new System.Drawing.Size(695, 429);
+            this.Load += new System.EventHandler(this.FxCase_Load);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

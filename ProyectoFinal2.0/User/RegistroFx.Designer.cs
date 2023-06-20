@@ -48,7 +48,8 @@
             label2 = new Label();
             label1 = new Label();
             btnCerrarLogin = new Button();
-            pictureBox1 = new PictureBox();
+
+            pictureBox10 = new PictureBox();
             panelContenedorRegistroFx.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -59,21 +60,27 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+
             SuspendLayout();
             // 
             // panelContenedorRegistroFx
             // 
+            panelContenedorRegistroFx.BackColor = Color.FromArgb(123, 41, 210);
+            panelContenedorRegistroFx.Controls.Add(pictureBox10);
             panelContenedorRegistroFx.Controls.Add(panel1);
-            panelContenedorRegistroFx.Controls.Add(pictureBox1);
             panelContenedorRegistroFx.Dock = DockStyle.Fill;
             panelContenedorRegistroFx.Location = new Point(0, 0);
             panelContenedorRegistroFx.Name = "panelContenedorRegistroFx";
             panelContenedorRegistroFx.Size = new Size(706, 380);
             panelContenedorRegistroFx.TabIndex = 0;
+            panelContenedorRegistroFx.Paint += panelContenedorRegistroFx_Paint;
+            panelContenedorRegistroFx.MouseDown += panelContenedorRegistroFx_MouseDown;
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(txtConfirmarContraseña);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(pictureBox9);
@@ -293,16 +300,15 @@
             btnCerrarLogin.UseVisualStyleBackColor = true;
             btnCerrarLogin.Click += btnCerrarLogin_Click;
             // 
-            // pictureBox1
+            // pictureBox10
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = Properties.Resources._7534314_3665792;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(495, 380);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureBox10.Image = Properties.Resources.Recurso_7;
+            pictureBox10.Location = new Point(12, 64);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(386, 246);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 3;
+            pictureBox10.TabStop = false;
             // 
             // RegistroFx
             // 
@@ -313,6 +319,11 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RegistroFx";
             StartPosition = FormStartPosition.CenterScreen;
+            Activated += RegistroFx_Activated;
+            ResizeEnd += RegistroFx_ResizeEnd;
+            SizeChanged += RegistroFx_SizeChanged;
+            Paint += RegistroFx_Paint;
+            MouseDown += RegistroFx_MouseDown;
             panelContenedorRegistroFx.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -324,14 +335,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panelContenedorRegistroFx;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private TextBox txtConfirmarContraseña;
         private PictureBox pictureBox8;
@@ -351,5 +361,6 @@
         private Label label2;
         private Label label1;
         private Button btnCerrarLogin;
+        private PictureBox pictureBox10;
     }
 }

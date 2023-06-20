@@ -57,12 +57,12 @@
             label18 = new Label();
             pictureBox6 = new PictureBox();
             panel2 = new Panel();
-            pictureBox2 = new PictureBox();
-            label6 = new Label();
-            button2 = new Button();
-            label5 = new Label();
-            comboBox1 = new ComboBox();
             label4 = new Label();
+            comboBox1 = new ComboBox();
+            label5 = new Label();
+            button2 = new Button();
+            label6 = new Label();
+            pictureBox2 = new PictureBox();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel4.SuspendLayout();
@@ -134,6 +134,7 @@
             button3.TabIndex = 5;
             button3.Text = "Agregar";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label9
             // 
@@ -213,6 +214,7 @@
             button4.TabIndex = 5;
             button4.Text = "Agregar";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label12
             // 
@@ -292,6 +294,7 @@
             button5.TabIndex = 5;
             button5.Text = "Agregar";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label15
             // 
@@ -371,6 +374,7 @@
             button6.TabIndex = 5;
             button6.Text = "Agregar";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label18
             // 
@@ -405,24 +409,37 @@
             panel2.Size = new Size(185, 322);
             panel2.TabIndex = 15;
             // 
-            // pictureBox2
+            // label4
             // 
-            pictureBox2.Image = Properties.Resources.SSD_M2_NVME_512GB_AS40G_512GT_C_M2_XPG_SPECTR;
-            pictureBox2.Location = new Point(1, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(167, 150);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(0, 80, 200);
+            label4.Location = new Point(9, 163);
+            label4.Name = "label4";
+            label4.Size = new Size(155, 26);
+            label4.TabIndex = 9;
+            label4.Text = "SSD M2 NVME 512GB AS40G-\r\n  512GT-C M2 XPG SPECTR\r\n";
             // 
-            // label6
+            // comboBox1
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 45);
-            label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 200Mb/s";
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
+            comboBox1.Location = new Point(13, 292);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(46, 23);
+            comboBox1.TabIndex = 7;
+            comboBox1.Text = "1";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Blue;
+            label5.Location = new Point(13, 271);
+            label5.Name = "label5";
+            label5.Size = new Size(56, 18);
+            label5.TabIndex = 6;
+            label5.Text = "$ 73.50";
             // 
             // button2
             // 
@@ -437,38 +454,26 @@
             button2.TabIndex = 5;
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
-            // label5
+            // label6
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Blue;
-            label5.Location = new Point(13, 271);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 18);
-            label5.TabIndex = 6;
-            label5.Text = "$ 73.50";
+            label6.AutoSize = true;
+            label6.Location = new Point(13, 206);
+            label6.Name = "label6";
+            label6.Size = new Size(154, 45);
+            label6.TabIndex = 4;
+            label6.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 200Mb/s";
             // 
-            // comboBox1
+            // pictureBox2
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
-            comboBox1.Location = new Point(13, 292);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(46, 23);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "1";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(0, 80, 200);
-            label4.Location = new Point(9, 163);
-            label4.Name = "label4";
-            label4.Size = new Size(155, 26);
-            label4.TabIndex = 9;
-            label4.Text = "SSD M2 NVME 512GB AS40G-\r\n  512GT-C M2 XPG SPECTR\r\n";
+            pictureBox2.Image = Properties.Resources.SSD_M2_NVME_512GB_AS40G_512GT_C_M2_XPG_SPECTR;
+            pictureBox2.Location = new Point(1, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(167, 150);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
             // 
             // FxSSD
             // 
@@ -482,7 +487,7 @@
             Controls.Add(panel4);
             Controls.Add(panel3);
             Name = "FxSSD";
-            Size = new Size(746, 734);
+            Size = new Size(746, 429);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

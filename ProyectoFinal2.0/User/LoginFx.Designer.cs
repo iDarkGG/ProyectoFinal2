@@ -54,35 +54,40 @@
             // 
             // panelContenedorLogin
             // 
-            this.panelContenedorLogin.BackColor = System.Drawing.Color.White;
-            this.panelContenedorLogin.Controls.Add(this.panel1);
-            this.panelContenedorLogin.Controls.Add(this.pictureBox1);
-            this.panelContenedorLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedorLogin.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedorLogin.Name = "panelContenedorLogin";
-            this.panelContenedorLogin.Size = new System.Drawing.Size(722, 419);
-            this.panelContenedorLogin.TabIndex = 0;
+            panelContenedorLogin.BackColor = Color.FromArgb(123, 41, 210);
+            panelContenedorLogin.Controls.Add(pictureBox1);
+            panelContenedorLogin.Controls.Add(panel1);
+            panelContenedorLogin.Dock = DockStyle.Fill;
+            panelContenedorLogin.Location = new Point(0, 0);
+            panelContenedorLogin.Name = "panelContenedorLogin";
+            panelContenedorLogin.Size = new Size(722, 419);
+            panelContenedorLogin.TabIndex = 0;
+            panelContenedorLogin.Paint += panelContenedorLogin_Paint;
+            panelContenedorLogin.MouseDown += panelContenedorLogin_MouseDown;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnRegistrar);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.txtUsuario);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnCerrarLogin);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(428, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 419);
-            this.panel1.TabIndex = 1;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(btnRegistrar);
+            panel1.Controls.Add(btnLogin);
+            panel1.Controls.Add(txtContraseña);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(txtUsuario);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btnCerrarLogin);
+            panel1.Cursor = Cursors.Hand;
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(428, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(294, 419);
+            panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
+            panel1.MouseDown += panel1_MouseDown;
             // 
             // btnRegistrar
             // 
@@ -219,14 +224,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::ProyectoFinal2._0.Properties.Resources.paisaje_montana_purpura;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(495, 419);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.Recurso_7;
+            pictureBox1.Location = new Point(3, 79);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(416, 257);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // LoginFx
             // 
@@ -252,7 +256,6 @@
         #endregion
 
         private Panel panelContenedorLogin;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private Button btnCerrarLogin;
         private Label label3;
@@ -266,5 +269,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private LinkLabel btnRegistrar;
+        private PictureBox pictureBox1;
     }
 }

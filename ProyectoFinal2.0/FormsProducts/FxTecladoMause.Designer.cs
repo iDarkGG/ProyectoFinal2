@@ -36,12 +36,14 @@
             label6 = new Label();
             pictureBox2 = new PictureBox();
             panel6 = new Panel();
+            label13 = new Label();
             comboBox5 = new ComboBox();
             label17 = new Label();
             button6 = new Button();
             label18 = new Label();
             pictureBox6 = new PictureBox();
             panel5 = new Panel();
+            label3 = new Label();
             comboBox4 = new ComboBox();
             label14 = new Label();
             button5 = new Button();
@@ -62,14 +64,12 @@
             label9 = new Label();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
+            label16 = new Label();
             comboBox6 = new ComboBox();
             label7 = new Label();
             button1 = new Button();
             label10 = new Label();
             pictureBox1 = new PictureBox();
-            label3 = new Label();
-            label13 = new Label();
-            label16 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel6.SuspendLayout();
@@ -103,11 +103,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 80, 200);
-            label1.Location = new Point(9, 162);
+            label1.Location = new Point(0, 162);
             label1.Name = "label1";
-            label1.Size = new Size(173, 26);
+            label1.Size = new Size(196, 26);
             label1.TabIndex = 27;
-            label1.Text = "    MONITOR AOC VA 32 C32G2 \r\nCURVED 165HZ (HDMI,DP) 1080P";
+            label1.Text = "TECLADO MECANICO LOGITECH USB \r\n       G PRO LEAGUE OF LEGENDS";
             // 
             // comboBox1
             // 
@@ -143,15 +143,16 @@
             button2.TabIndex = 5;
             button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(13, 206);
+            label6.Location = new Point(9, 205);
             label6.Name = "label6";
-            label6.Size = new Size(154, 45);
+            label6.Size = new Size(159, 60);
             label6.TabIndex = 4;
-            label6.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 200Mb/s";
+            label6.Text = "LIGHTSPEED Wireless ofrece\r\n un rendimiento profesional\r\n con flexibilidad y libertad de\r\n cables. ";
             // 
             // pictureBox2
             // 
@@ -176,6 +177,17 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(185, 322);
             panel6.TabIndex = 28;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.ForeColor = Color.FromArgb(0, 80, 200);
+            label13.Location = new Point(3, 163);
+            label13.Name = "label13";
+            label13.Size = new Size(179, 26);
+            label13.TabIndex = 34;
+            label13.Text = "MOUSE LOGITECH INALAMBRICO \r\n       G604 LIGHTSPEED GAMING";
             // 
             // comboBox5
             // 
@@ -211,15 +223,16 @@
             button6.TabIndex = 5;
             button6.Text = "Agregar";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Location = new Point(13, 206);
             label18.Name = "label18";
-            label18.Size = new Size(154, 45);
+            label18.Size = new Size(164, 60);
             label18.TabIndex = 4;
-            label18.Text = "para equipos de sobremesa \r\nSSD M.2  1Ttb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label18.Text = "Carga inalámbrica Power Play\r\n: nunca te preocupes por \r\nla duración de la batería \r\nde nuevo.";
             // 
             // pictureBox6
             // 
@@ -244,6 +257,17 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(185, 322);
             panel5.TabIndex = 31;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(0, 80, 200);
+            label3.Location = new Point(32, 163);
+            label3.Name = "label3";
+            label3.Size = new Size(126, 26);
+            label3.TabIndex = 33;
+            label3.Text = "MOUSE RAZER GAMER \r\n     DEATHADDER V2";
             // 
             // comboBox4
             // 
@@ -279,15 +303,16 @@
             button5.TabIndex = 5;
             button5.Text = "Agregar";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Location = new Point(13, 206);
             label15.Name = "label15";
-            label15.Size = new Size(154, 45);
+            label15.Size = new Size(167, 60);
             label15.TabIndex = 4;
-            label15.Text = "para equipos de sobremesa \r\nSSD M2 256Gb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label15.Text = "Sensor óptico Focus+ 20K DPI:\r\n se calibra automáticamente \r\na través de la alfombrilla \r\ndel mouse";
             // 
             // pictureBox5
             // 
@@ -318,11 +343,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(0, 80, 200);
-            label2.Location = new Point(3, 162);
+            label2.Location = new Point(0, 162);
             label2.Name = "label2";
-            label2.Size = new Size(181, 26);
+            label2.Size = new Size(197, 26);
             label2.TabIndex = 29;
-            label2.Text = "MONITOR DELL LED 19.5P E2020H \r\n            60HZ (VGA/DP) 768";
+            label2.Text = "TECLADO MECANICO 60% GLORIOUS\r\n       USB GMMK-COMPACT-BRN";
             // 
             // comboBox3
             // 
@@ -358,15 +383,16 @@
             button4.TabIndex = 5;
             button4.Text = "Agregar";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Location = new Point(13, 206);
             label12.Name = "label12";
-            label12.Size = new Size(154, 45);
+            label12.Size = new Size(148, 60);
             label12.TabIndex = 4;
-            label12.Text = "para equipos de sobremesa \r\nSSD 512Gb velocidad de\r\ndescarga 100Mb/s\r\n";
+            label12.Text = "Diseño único de montaje\r\n de junta: soporte de junta \r\nde silicona con tres capas \r\nde espumas";
             // 
             // pictureBox4
             // 
@@ -399,9 +425,9 @@
             label4.ForeColor = Color.FromArgb(0, 80, 200);
             label4.Location = new Point(1, 163);
             label4.Name = "label4";
-            label4.Size = new Size(181, 26);
+            label4.Size = new Size(188, 26);
             label4.TabIndex = 28;
-            label4.Text = "MONITOR AOC LED 21.5P 22B2HM\r\n       75HZ (VGA/HDMI) 1080P";
+            label4.Text = "TECLADO MECANICO CORSAIR K60 \r\n          PRO RED CHERRY LED";
             // 
             // comboBox2
             // 
@@ -437,15 +463,16 @@
             button3.TabIndex = 5;
             button3.Text = "Agregar";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(13, 206);
+            label9.Location = new Point(11, 192);
             label9.Name = "label9";
-            label9.Size = new Size(154, 45);
+            label9.Size = new Size(166, 60);
             label9.TabIndex = 4;
-            label9.Text = "para equipos de sobremesa \r\nSSD 1.92Tb velocidad de\r\ndescarga 20Gb/s\r\n";
+            label9.Text = "nodized Aluminum Structure: \r\nBrushed aluminum with black\r\n anodization offers a modern\r\n and stylish";
             // 
             // pictureBox3
             // 
@@ -470,6 +497,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(185, 322);
             panel1.TabIndex = 32;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.ForeColor = Color.FromArgb(0, 80, 200);
+            label16.Location = new Point(13, 163);
+            label16.Name = "label16";
+            label16.Size = new Size(156, 26);
+            label16.TabIndex = 35;
+            label16.Text = "MOUSE ASUS USB P511 ROG \r\n            CHAKRAM CORE\r\n";
             // 
             // comboBox6
             // 
@@ -505,15 +543,16 @@
             button1.TabIndex = 5;
             button1.Text = "Agregar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(13, 206);
+            label10.Location = new Point(10, 206);
             label10.Name = "label10";
-            label10.Size = new Size(154, 45);
+            label10.Size = new Size(169, 45);
             label10.TabIndex = 4;
-            label10.Text = "para equipos de sobremesa \r\nSSD M.2  1Ttb velocidad de\r\ndescarga 600Mb/s\r\n";
+            label10.Text = "Sensor óptico de 7000 ppp \r\nde grado de juego para un \r\nseguimiento preciso de píxeles";
             // 
             // pictureBox1
             // 
@@ -524,39 +563,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(0, 80, 200);
-            label3.Location = new Point(32, 163);
-            label3.Name = "label3";
-            label3.Size = new Size(126, 26);
-            label3.TabIndex = 33;
-            label3.Text = "MOUSE RAZER GAMER \r\n     DEATHADDER V2";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = Color.FromArgb(0, 80, 200);
-            label13.Location = new Point(3, 163);
-            label13.Name = "label13";
-            label13.Size = new Size(179, 26);
-            label13.TabIndex = 34;
-            label13.Text = "MOUSE LOGITECH INALAMBRICO \r\n       G604 LIGHTSPEED GAMING";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = Color.FromArgb(0, 80, 200);
-            label16.Location = new Point(13, 163);
-            label16.Name = "label16";
-            label16.Size = new Size(156, 26);
-            label16.TabIndex = 35;
-            label16.Text = "MOUSE ASUS USB P511 ROG \r\n            CHAKRAM CORE\r\n";
             // 
             // FxTecladoMause
             // 
@@ -570,6 +576,7 @@
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
+            ImeMode = ImeMode.On;
             Name = "FxTecladoMause";
             Size = new Size(746, 429);
             panel2.ResumeLayout(false);

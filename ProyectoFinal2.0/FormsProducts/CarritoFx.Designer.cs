@@ -174,6 +174,7 @@
             this.dataGridViewCarrito.Location = new System.Drawing.Point(3, 121);
             this.dataGridViewCarrito.Name = "dataGridViewCarrito";
             this.dataGridViewCarrito.RowTemplate.Height = 25;
+            this.dataGridViewCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCarrito.Size = new System.Drawing.Size(533, 305);
             this.dataGridViewCarrito.TabIndex = 4;
             // 
@@ -188,6 +189,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CarritoFx";
             this.Size = new System.Drawing.Size(746, 429);
+            this.Load += new System.EventHandler(this.CarritoFx_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarrito)).EndInit();
