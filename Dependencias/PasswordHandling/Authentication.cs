@@ -13,7 +13,7 @@ namespace Dependencias.PasswordHandling
 {
     public class Authentication
     {
-        public Uri APIUrl = new Uri("https://localhost:7274/ApiTienda/Users/Admin");
+        
 
         HashCreator passwordhasher = new HashCreator();
         Regex EmailPattern = new Regex("^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$");
@@ -76,16 +76,22 @@ namespace Dependencias.PasswordHandling
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    Uri APIUrl = new Uri($"https://localhost:7274/ApiTienda/Users/{Username}");
                     var Response = client.GetAsync(APIUrl).Result;
-
-
-                    var output = Response.Content.ReadAsStringAsync().Result;
-                    UserScheme DeserializedUser = JsonSerializer.Deserialize<UserScheme>(output);
-
-                    if (passwordhasher.EncryptPassword(password))
+                   
+                    
+                    if(Response.IsSuccessStatusCode == true)
                     {
-                        return passwordhasher.CompareHash(passwordhasher.FinalHash, DeserializedUser.password);
+                        var output = Response.Content.ReadAsStringAsync().Result;
+                        UserScheme DeserializedUser = JsonSerializer.Deserialize<UserScheme>(output);
+
+                        if (passwordhasher.EncryptPassword(password))
+                        {
+                            return passwordhasher.CompareHash(passwordhasher.FinalHash, DeserializedUser.password);
+                        }
                     }
+
+                   
                 }
             }
             catch (Exception)
@@ -104,39 +110,45 @@ namespace Dependencias.PasswordHandling
 
         public async Task<bool> RegistrationChecksum(string Username, string Email, string Password, string confPassword)
         {
+            HashCreator hasher = new HashCreator();
+            Uri APIUrl = new Uri("https://localhost:7274/ApiTienda/Users/");
             if (SintaxVerifier(Username, Email))
             {
                 if (EmailSintaxVerifier(Email) & PasswordIsMatch(Password, confPassword))
                 {
-                    //Proceding with User Registration.
-                    using (HttpClient client = new HttpClient())
+                    if (hasher.EncryptPassword(confPassword))
                     {
-
-                        try
+                        //Proceding with User Registration.
+                        using (HttpClient client = new HttpClient())
                         {
-                            var string2 = JsonSerializer.Serialize(new UserScheme
+
+                            try
                             {
-                                userName = Username,
-                                email = Email,
-                                password = confPassword
+                                var string2 = JsonSerializer.Serialize(new UserScheme
+                                {
+                                    userName = Username,
+                                    email = Email,
+                                    password = hasher.FinalHash
 
-                            });
-                            var content = new StringContent(string2, Encoding.UTF8);
+                                }); 
+                                var content = new StringContent(string2, Encoding.UTF8, "application/json");
 
-                            var Response = client.PostAsync(APIUrl.ToString(), content).Result;
+                                var Response = client.PostAsync(APIUrl, content).Result;
 
-                            if(Response.IsSuccessStatusCode == true)
-                            {
-                                return true;
+                                if (Response.IsSuccessStatusCode == true)
+                                {
+                                    return true;
+                                }
                             }
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine("Error de respuesta en la API");
-                            throw;
-                        }
+                            catch (Exception)
+                            {
+                                Console.WriteLine("Error de respuesta en la API");
+                                throw;
+                            }
 
+                        }
                     }
+                   
                 }
 
             }
