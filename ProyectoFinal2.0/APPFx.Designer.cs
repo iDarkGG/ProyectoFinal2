@@ -56,8 +56,10 @@
             fxFuentesDePoder2 = new FormsProducts.FxFuentesDePoder();
             fxCase2 = new FormsProducts.FxCase();
             carritoFx2 = new FormsProducts.CarritoFx();
-            btnCarrito = new PictureBox();
             fxPlacasMadres1 = new FormsProducts.FxPlacasMadres();
+            btnCarrito = new PictureBox();
+            fxInicio4 = new FxInicio();
+            fxInicio5 = new FxInicio();
             panelContenedorBotones.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -296,6 +298,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.Recurso_8;
             pictureBox1.Location = new Point(16, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(85, 87);
@@ -319,6 +322,8 @@
             // 
             // panelContenedorProductos
             // 
+            panelContenedorProductos.Controls.Add(fxInicio5);
+            panelContenedorProductos.Controls.Add(fxInicio4);
             panelContenedorProductos.Controls.Add(fxInicio3);
             panelContenedorProductos.Controls.Add(fxTecladoMause2);
             panelContenedorProductos.Controls.Add(fxTarjetasGraficas2);
@@ -434,6 +439,16 @@
             carritoFx2.Size = new Size(746, 429);
             carritoFx2.TabIndex = 0;
             // 
+            // fxPlacasMadres1
+            // 
+            fxPlacasMadres1.AutoScroll = true;
+            fxPlacasMadres1.BackColor = Color.White;
+            fxPlacasMadres1.Dock = DockStyle.Fill;
+            fxPlacasMadres1.Location = new Point(0, 0);
+            fxPlacasMadres1.Name = "fxPlacasMadres1";
+            fxPlacasMadres1.Size = new Size(746, 429);
+            fxPlacasMadres1.TabIndex = 5;
+            // 
             // btnCarrito
             // 
             btnCarrito.Image = Properties.Resources.anadir_al_carrito;
@@ -445,15 +460,21 @@
             btnCarrito.TabStop = false;
             btnCarrito.Click += btnCarrito_Click;
             // 
-            // fxPlacasMadres1
+            // fxInicio4
             // 
-            fxPlacasMadres1.AutoScroll = true;
-            fxPlacasMadres1.BackColor = Color.White;
-            fxPlacasMadres1.Dock = DockStyle.Fill;
-            fxPlacasMadres1.Location = new Point(0, 0);
-            fxPlacasMadres1.Name = "fxPlacasMadres1";
-            fxPlacasMadres1.Size = new Size(746, 429);
-            fxPlacasMadres1.TabIndex = 5;
+            fxInicio4.BackColor = Color.White;
+            fxInicio4.Location = new Point(0, 0);
+            fxInicio4.Name = "fxInicio4";
+            fxInicio4.Size = new Size(746, 429);
+            fxInicio4.TabIndex = 6;
+            // 
+            // fxInicio5
+            // 
+            fxInicio5.BackColor = Color.White;
+            fxInicio5.Location = new Point(0, 0);
+            fxInicio5.Name = "fxInicio5";
+            fxInicio5.Size = new Size(746, 429);
+            fxInicio5.TabIndex = 7;
             // 
             // APPFx
             // 
@@ -524,5 +545,7 @@
         private FormsProducts.FxCase fxCase2;
         private FormsProducts.CarritoFx carritoFx2;
         private FormsProducts.FxPlacasMadres fxPlacasMadres1;
+        private FxInicio fxInicio5;
+        private FxInicio fxInicio4;
     }
 }

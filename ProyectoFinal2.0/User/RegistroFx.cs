@@ -272,7 +272,7 @@ namespace ProyectoFinal2._0
             if (txtConfirmarContraseña.Text == "CONFIRMAR CONTRASEÑA")
             {
                 txtConfirmarContraseña.Text = "";
-               txtConfirmarContraseña.ForeColor = Color.LightGray;
+                txtConfirmarContraseña.ForeColor = Color.LightGray;
                 txtConfirmarContraseña.UseSystemPasswordChar = true;
             }
         }

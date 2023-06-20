@@ -54,9 +54,9 @@
             // 
             // panelContenedorLogin
             // 
-            panelContenedorLogin.BackColor = Color.White;
-            panelContenedorLogin.Controls.Add(panel1);
+            panelContenedorLogin.BackColor = Color.FromArgb(123, 41, 210);
             panelContenedorLogin.Controls.Add(pictureBox1);
+            panelContenedorLogin.Controls.Add(panel1);
             panelContenedorLogin.Dock = DockStyle.Fill;
             panelContenedorLogin.Location = new Point(0, 0);
             panelContenedorLogin.Name = "panelContenedorLogin";
@@ -67,6 +67,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(btnRegistrar);
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(txtContraseña);
@@ -226,13 +227,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = Properties.Resources.paisaje_montana_purpura;
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Image = Properties.Resources.Recurso_7;
+            pictureBox1.Location = new Point(3, 79);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(495, 419);
+            pictureBox1.Size = new Size(416, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
+            pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
             // LoginFx
@@ -263,7 +263,6 @@
         #endregion
 
         private Panel panelContenedorLogin;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private Button btnCerrarLogin;
         private Label label3;
@@ -277,5 +276,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private LinkLabel btnRegistrar;
+        private PictureBox pictureBox1;
     }
 }
