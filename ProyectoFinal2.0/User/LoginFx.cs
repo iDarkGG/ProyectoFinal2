@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Dependencias.PasswordHandling;
 namespace ProyectoFinal2._0
 {
     public partial class LoginFx : Form
@@ -214,9 +214,25 @@ namespace ProyectoFinal2._0
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            APPFx abrirFormPrincipal = new APPFx();
-            abrirFormPrincipal.Show();
-            this.ShowInTaskbar = false;
+            Authentication auth = new Authentication();
+            if (auth.SintaxVerifier(txtUsuario.Text, txtContraseña.Text) & auth.PasswordChecksum(txtContraseña.Text))
+            {
+                if (auth.LogInChechsum(txtUsuario.Text, txtContraseña.Text).Result == true)
+                {
+                    APPFx abrirFormPrincipal = new APPFx();
+                    abrirFormPrincipal.ShowDialog();
+                    this.ShowInTaskbar = false;
+
+                }
+                {
+                    MessageBox.Show("ERROR EN LOS DATOS \nVERIFIQUE SUS DATOS");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("ERROR EN LOS DATOS \nVERIFIQUE SUS DATOS");
+            }
 
         }
 
@@ -224,9 +240,11 @@ namespace ProyectoFinal2._0
 
         private void btnRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegistroFx AbrirRegistro = new RegistroFx();
-            AbrirRegistro.ShowDialog();
-
+            this.Hide();
+            RegistroFx registro = new RegistroFx();
+            registro.ShowDialog();
+            
+           
 
         }
     }

@@ -10,18 +10,15 @@ namespace Dependencias.PasswordHandling
 {
     public class HashCreator
     {
-        private string stringtoHash;
         private byte[] tmpStore;
         private byte[] hash;
-        private string finalHash;
+        private string finalhash;
 
-        public string StringtoHash { set => finalHash = value; }
+        public string FinalHash { get => finalhash; }
 
-        public string FinalHash { get => finalHash; set => finalHash = value; }
-
-        public void EncryptPassword()
+        public bool EncryptPassword(string stringtohash)
         {
-            tmpStore = ASCIIEncoding.ASCII.GetBytes(stringtoHash);
+            tmpStore = ASCIIEncoding.ASCII.GetBytes(stringtohash);
             hash = new MD5CryptoServiceProvider().ComputeHash(tmpStore);
             int i;
             StringBuilder sOutput = new StringBuilder(hash.Length);
@@ -29,7 +26,9 @@ namespace Dependencias.PasswordHandling
             {
                 sOutput.Append(hash[i].ToString("X2"));
             }
-            FinalHash = sOutput.ToString();
+            finalhash = sOutput.ToString();
+
+            return true;
         }
 
         public bool CompareHash(string hash1, string hash2)
