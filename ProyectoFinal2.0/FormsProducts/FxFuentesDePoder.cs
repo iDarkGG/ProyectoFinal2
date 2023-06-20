@@ -17,29 +17,15 @@ namespace ProyectoFinal2._0.FormsProducts
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void FxFuentesDePoder_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Producto agregado", "Agregado");
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Producto agregado", "Agregado");
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Producto agregado", "Agregado");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Producto agregado", "Agregado");
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Producto agregado", "Agregado");
         }
     }
 }

@@ -52,12 +52,50 @@ namespace ProyectoFinal2._0.FormsProducts
                 var content = new StringContent(str, System.Text.Encoding.UTF8, "application/json");
 
                 var result =  cliente.PostAsync("https://localhost:7274/ApiTienda/Carrito", content).Result;
-                if (result.IsSuccessStatusCode) MessageBox.Show("Porra agregada");
+                if (result.IsSuccessStatusCode) MessageBox.Show("Producto agregado", "Agregado");
                 else MessageBox.Show("error no agregada " + result.StatusCode.ToString());
             }
 
             
 
        
+        }
+
+        private async void FxCase_Load(object sender, EventArgs e)
+        {
+            using (var cliente = new HttpClient())
+            {
+                var result = await cliente.GetAsync("https://localhost:7274/ApiTienda/Carrito");
+
+                if (result.IsSuccessStatusCode)
+                {
+                    var products = await result.Content.ReadAsStringAsync();
+
+                    MessageBox.Show(products);
+
+                    var lst = JsonSerializer.Deserialize<IEnumerable<ProductScheme>>(products);
+
+
+                    fillComboBox(lst);
+
+                }
+                else
+                {
+                    MessageBox.Show("Fallo en la api xd");
+                }
+            }
+        }
+
+
+        private void fillComboBox(IEnumerable<ProductScheme> lst)
+        {
+            
+        }
+
+
     }
+
+
+
+
 }

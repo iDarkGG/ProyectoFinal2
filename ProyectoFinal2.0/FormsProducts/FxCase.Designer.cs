@@ -146,7 +146,6 @@
             // 
             // button3
             // 
-
             this.button3.BackColor = System.Drawing.Color.Gold;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -668,7 +667,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FxCase";
-            this.Size = new System.Drawing.Size(712, 429);
+            this.Size = new System.Drawing.Size(695, 429);
+            this.Load += new System.EventHandler(this.FxCase_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -688,6 +688,7 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

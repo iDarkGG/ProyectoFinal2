@@ -114,6 +114,7 @@
             this.txtNombreTitular.Name = "txtNombreTitular";
             this.txtNombreTitular.Size = new System.Drawing.Size(266, 23);
             this.txtNombreTitular.TabIndex = 10;
+            this.txtNombreTitular.TextChanged += new System.EventHandler(this.txtNombreTitular_TextChanged);
             // 
             // label1
             // 

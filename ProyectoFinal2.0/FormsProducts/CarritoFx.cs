@@ -51,7 +51,8 @@ namespace ProyectoFinal2._0.FormsProducts
                     var lst = JsonSerializer.Deserialize<IEnumerable<CarritoScheme>>(products);     
 
                     dataGridViewCarrito.DataSource =  lst.ToList();
-                }else
+                }
+                else
                 {
                     MessageBox.Show("Fallo en la api xd");
                 }

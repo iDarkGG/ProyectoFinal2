@@ -38,7 +38,7 @@ namespace Dependencias.Email
             }
         }
 
-        public void fillRows(IEnumerable<Carrito> products)
+        public void fillRows(IEnumerable<CarritoScheme> products)
         {
             var strToInsert = "";
             foreach (var product in products)
